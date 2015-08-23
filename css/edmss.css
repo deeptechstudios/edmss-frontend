@@ -1,0 +1,154 @@
+body {
+    margin-top: -21px; /* WTF WHY DO I HAVE TO DO THIS */
+    background-color: #151515;
+
+    font-family: "Titillium Web";
+}
+
+label {
+    text-transform: uppercase;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+/* Block Styles */
+
+.body-wrapper {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    max-width: 100%;
+
+    line-height: 100px;
+    background-color: #333;
+    color: white;
+}
+
+.nav-wrapper * {
+    vertical-align: middle;
+}
+
+.nav-wrapper, .player {
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+.content-wrapper {
+    position: fixed;
+    top: 100px;
+    bottom: 100px;
+    width: 100%;
+    padding: 0 3em;
+
+    overflow: auto;
+    background-color: #f9f9f9;
+}
+
+/* Icon Bar */
+
+a.item {
+    border-bottom: 9px solid #555;
+}
+
+a.item:not(.current) * {
+    color: #bbb;
+}
+
+a.item.current, a.item:hover {
+    border-bottom: 9px solid deepskyblue;
+}
+
+/*
+.content-heading {
+    margin: 0.4em;
+    font-size: 1.4em;
+    text-align: center;
+    color: #aaa;
+}
+*/
+
+
+/* Track Styles */
+
+.track {
+    height: 100px;
+    padding: 1em 0;
+    border-top: 1px solid darkgray;
+}
+
+.track:first-of-type {
+    border-top: none;
+}
+
+.track * {
+    vertical-align: middle;
+}
+
+.track img {
+    width: 60px;
+    height: 60px;
+    margin: 5px 10px;
+}
+
+.track span {
+    display: inline-block;
+    position: relative;
+}
+
+.track-name {
+    font-weight: 600;
+}
+
+
+/* Player Styles */
+
+.above-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    overflow: auto;
+}
+
+.player {
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    max-width: 100%;
+
+    background-color: #333;
+    color: white;
+}
+
+.player * {
+    vertical-align: middle;
+}
+
+.player img {
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+}
+
+.player span {
+    display: inline-block;
+    position: relative;
+}
+
+.player .columns:first-of-type {
+    padding: 0;
+}
+
+.player-controls {
+    text-align: center;
+    line-height: 100px;
+}
