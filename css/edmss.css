@@ -48,7 +48,8 @@ i:hover {
     width: 100%;
     padding: 0 3em;
 
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     background-color: #f9f9f9;
 }
 
@@ -65,15 +66,6 @@ a.item:not(.current) * {
 a.item.current, a.item:hover {
     border-bottom: 9px solid deepskyblue;
 }
-
-/*
-.content-heading {
-    margin: 0.4em;
-    font-size: 1.4em;
-    text-align: center;
-    color: #aaa;
-}
-*/
 
 /* Page Styles */
 
@@ -96,6 +88,11 @@ a.item.current, a.item:hover {
 
 .page-1 {
     left: 100%;
+    padding: 1em 10%;
+}
+
+.page-1 p {
+    max-width: 500px;
 }
 
 .page-2 {
