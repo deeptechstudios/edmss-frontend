@@ -40,47 +40,55 @@
 
 
         <div class="content-wrapper">
-            <div class="track">
-                <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+            <div class="page-0">
+                <div class="track">
+                    <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
                 <span>
                     <span class="track-name">Track Name</span><br/>
                     <span class="track-artist">Track Artist</span>
                 </span>
+                </div>
+                <div class="track">
+                    <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                <span>
+                    <span class="track-name">Track Name</span><br/>
+                    <span class="track-artist">Track Artist</span>
+                </span>
+                </div>
+                <div class="track">
+                    <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                <span>
+                    <span class="track-name">Track Name</span><br/>
+                    <span class="track-artist">Track Artist</span>
+                </span>
+                </div>
+                <div class="track">
+                    <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                <span>
+                    <span class="track-name">Track Name</span><br/>
+                    <span class="track-artist">Track Artist</span>
+                </span>
+                </div>
+                <div class="track">
+                    <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                <span>
+                    <span class="track-name">Track Name</span><br/>
+                    <span class="track-artist">Track Artist</span>
+                </span>
+                </div>
+                <div class="track">
+                    <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                <span>
+                    <span class="track-name">Track Name</span><br/>
+                    <span class="track-artist">Track Artist</span>
+                </span>
+                </div>
             </div>
-            <div class="track">
-                <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                <span>
-                    <span class="track-name">Track Name</span><br/>
-                    <span class="track-artist">Track Artist</span>
-                </span>
+            <div class="page-1">
+                asdf
             </div>
-            <div class="track">
-                <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                <span>
-                    <span class="track-name">Track Name</span><br/>
-                    <span class="track-artist">Track Artist</span>
-                </span>
-            </div>
-            <div class="track">
-                <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                <span>
-                    <span class="track-name">Track Name</span><br/>
-                    <span class="track-artist">Track Artist</span>
-                </span>
-            </div>
-            <div class="track">
-                <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                <span>
-                    <span class="track-name">Track Name</span><br/>
-                    <span class="track-artist">Track Artist</span>
-                </span>
-            </div>
-            <div class="track">
-                <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                <span>
-                    <span class="track-name">Track Name</span><br/>
-                    <span class="track-artist">Track Artist</span>
-                </span>
+            <div class="page-2">
+                qwert
             </div>
         </div>
 
@@ -119,5 +127,35 @@
         </div>
     </div>
 
+    <script src="js/vendor/jquery.js"></script>
+    <script>
+        $(function() {
+            $('.icon-bar a.item').click(function() {
+                var pages = [$('.page-0'), $('.page-1'), $('.page-2')];
+                var index = $(this).index();
+
+                switch(index) {
+                    case 0:
+                        $(pages[0]).css('left', '0');
+                        $(pages[1]).css('left', '100%');
+                        $(pages[2]).css('left', '200%');
+                        break;
+                    case 1:
+                        $(pages[0]).css('left', '-100%');
+                        $(pages[1]).css('left', '0');
+                        $(pages[2]).css('left', '100%');
+                        break;
+                    case 2:
+                        $(pages[0]).css('left', '-200%');
+                        $(pages[1]).css('left', '-100%');
+                        $(pages[2]).css('left', '0');
+                        break;
+                }
+
+                $('.icon-bar a.item.current').removeClass('current');
+                $(this).addClass('current')
+            });
+        });
+    </script>
 </body>
 </html>
