@@ -140,15 +140,6 @@ a.item.current, a.item:hover {
 
 /* Player Styles */
 
-.above-player {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 100px;
-    overflow: auto;
-}
-
 .player {
     position: fixed;
     bottom: 0;
@@ -170,7 +161,7 @@ a.item.current, a.item:hover {
 }
 
 .player span {
-    display: inline-block;
+    display: inline-block !important;
     position: relative;
 }
 
