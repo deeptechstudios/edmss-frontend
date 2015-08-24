@@ -49,7 +49,7 @@ i:hover {
     padding: 0 3em;
 
     overflow-x: hidden;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
     background-color: #f9f9f9;
 }
 
@@ -74,6 +74,7 @@ a.item.current, a.item:hover {
     height: 100%;
     width: 100%;
     padding: 0 1em;
+    overflow: auto;
 
     -webkit-transition: left 0.6s ease;
     -moz-transition: left 0.6s ease;
@@ -84,11 +85,12 @@ a.item.current, a.item:hover {
 
 .page-0 {
     left: 0;
+    padding: 0 2em;
 }
 
 .page-1 {
     left: 100%;
-    padding: 1em 10%;
+    padding: 1em 0;
 }
 
 .page-1 p {
@@ -97,8 +99,23 @@ a.item.current, a.item:hover {
 
 .page-2 {
     left: 200%;
+    padding: 1em 0;
 }
 
+.page-2 .columns, .page-2 form a {
+    float: right;
+}
+
+
+.playlist-header {
+    font-size: 0.6em;
+    line-height: 0.6em;
+    text-transform: uppercase;
+}
+
+.playlist-header label {
+    color: #aaa;
+}
 
 /* Track Styles */
 
@@ -134,15 +151,6 @@ a.item.current, a.item:hover {
 
 /* Player Styles */
 
-.above-player {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 100px;
-    overflow: auto;
-}
-
 .player {
     position: fixed;
     bottom: 0;
@@ -164,12 +172,13 @@ a.item.current, a.item:hover {
 }
 
 .player span {
-    display: inline-block;
+    display: inline-block !important;
     position: relative;
 }
 
-.player .columns:first-of-type {
+.player .columns:first-of-type, .track .columns:first-of-type {
     padding: 0;
+    overflow-x: hidden;
 }
 
 .player-controls {
