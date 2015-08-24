@@ -107,6 +107,21 @@ a.item.current, a.item:hover {
 }
 
 
+.playlist-header {
+    font-size: 0.6em;
+    line-height: 0.6em;
+    text-transform: uppercase;
+}
+
+.playlist-header label {
+    color: #aaa;
+}
+
+.playlist-header div {
+    text-align: center;
+}
+
+
 /* Track Styles */
 
 .track {
@@ -166,8 +181,9 @@ a.item.current, a.item:hover {
     position: relative;
 }
 
-.player .columns:first-of-type {
+.player .columns:first-of-type, .track .columns:first-of-type {
     padding: 0;
+    overflow-x: hidden;
 }
 
 .player-controls {
