@@ -84,11 +84,12 @@ a.item.current, a.item:hover {
 
 .page-0 {
     left: 0;
+    padding: 0 2em;
 }
 
 .page-1 {
     left: 100%;
-    padding: 1em 10%;
+    padding: 1em 0;
 }
 
 .page-1 p {
@@ -97,6 +98,11 @@ a.item.current, a.item:hover {
 
 .page-2 {
     left: 200%;
+    padding: 1em 0;
+}
+
+.page-2 .columns, .page-2 form a {
+    float: right;
 }
 
 
