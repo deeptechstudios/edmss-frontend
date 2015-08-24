@@ -117,11 +117,6 @@ a.item.current, a.item:hover {
     color: #aaa;
 }
 
-.playlist-header div {
-    text-align: center;
-}
-
-
 /* Track Styles */
 
 .track {
