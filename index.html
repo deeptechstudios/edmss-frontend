@@ -197,7 +197,6 @@
                             <li>Ticket give-aways for upcoming shows</li>
                             <li>And more!</li>
                         </ul>
-                        </p>
                         <p>
                             If you're in the Atlanta area, you can tune in on 91.1 FM. You can also listen to the show right here
                             on this very website! During the show, the player will automatically connect to the online live stream,
@@ -309,6 +308,14 @@
                         <div class="player-more-i-wrapper">
                             <i class="fa fa-2x fa-ellipsis-v"></i>
                         </div>
+                        <div class="player-more-menu">
+                            <ul>
+                                <li>
+                                    <span>Share</span>
+                                    <i class="fa fa-share"></i>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -316,40 +323,6 @@
     </div>
 
     <script src="js/vendor/jquery.js"></script>
-    <script>
-        $(function() {
-            $('.icon-bar a.item').click(function() {
-                var pages = [$('.page-0'), $('.page-1'), $('.page-2')];
-                var index = $(this).index();
-
-                switch(index) {
-                    case 0:
-                        $(pages[0]).css('left', '0');
-                        $(pages[1]).css('left', '100%');
-                        $(pages[2]).css('left', '200%');
-                        break;
-                    case 1:
-                        $(pages[0]).css('left', '-100%');
-                        $(pages[1]).css('left', '0');
-                        $(pages[2]).css('left', '100%');
-                        break;
-                    case 2:
-                        $(pages[0]).css('left', '-200%');
-                        $(pages[1]).css('left', '-100%');
-                        $(pages[2]).css('left', '0');
-                        break;
-                }
-
-                $('.icon-bar a.item.current').removeClass('current');
-                $(this).addClass('current')
-            });
-
-            $('.track').hover(function() {
-                $(this).find('i').css('display', 'block');
-            }, function() {
-                $(this).find('i').css('display', 'none');
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>

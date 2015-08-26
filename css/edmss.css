@@ -9,6 +9,13 @@ label {
     text-transform: uppercase;
 }
 
+
+.feed-i-wrapper,
+.backward-i-wrapper,
+.play-i-wrapper,
+.forward-i-wrapper,
+.volume-i-wrapper,
+.player-more-i-wrapper,
 i:hover {
     cursor: pointer;
 }
@@ -197,4 +204,47 @@ a.item.current, a.item:hover {
 .player-controls {
     text-align: center;
     line-height: 100px;
+}
+
+.player-more-menu {
+    display: none;
+    position: fixed;
+    z-index: 100;
+
+    right: 0;
+    bottom: 100px;
+    width: 250px;
+
+    padding: 1em 0.2em;
+
+    background-color: #333;
+    color: inherit;
+
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+.player-more-menu ul {
+    margin: 0;
+}
+
+.player-more-menu li {
+    padding: 1em 0;
+    border-top: 1px solid gray;
+    list-style: none;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.player-more-menu li:hover {
+    cursor: pointer;
+}
+
+.player-more-menu li:first-of-type {
+    border: none;
+}
+
+.player-more-menu li * {
+    padding-right: 1em;
 }
