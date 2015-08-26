@@ -137,6 +137,11 @@ a.item.current, a.item:hover {
     border-top: none;
 }
 
+.track:hover {
+    cursor: pointer;
+    background-color: #eee;
+}
+
 .track * {
     vertical-align: middle;
 }
