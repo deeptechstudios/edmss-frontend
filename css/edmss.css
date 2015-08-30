@@ -106,16 +106,20 @@ a.item.current, a.item:hover {
 
 .page-1 {
     left: 100%;
-    padding: 1em 0;
+    padding: 1em;
 }
 
 .page-1 p {
     max-width: 500px;
 }
 
+.page-1 ul {
+    list-style-type: circle;
+}
+
 .page-2 {
     left: 200%;
-    padding: 1em 0;
+    padding: 1em;
 }
 
 .page-2 .columns, .page-2 form a {
@@ -280,6 +284,10 @@ a.item.current, a.item:hover {
     box-shadow: 0 0 8px rgba(0,0,0,0.4);
 }
 
+.share-menu ul {
+    margin: 0 0.4em;
+}
+
 .share-menu li {
     display: inline-block;
     list-style: none;
@@ -302,4 +310,8 @@ a.item.current, a.item:hover {
 .share-menu li.twitter {
     color: white;
     background-color: #55acee;
+}
+.share-menu li.google {
+    color: white;
+    background-color: #dd4b39;
 }
