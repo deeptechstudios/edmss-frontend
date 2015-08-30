@@ -5,6 +5,7 @@
 $(function() {
     $('body').click(function() {
         $('.player-more-menu').hide(100);
+        $('.share-menu').hide(100);
     });
 
     $('.icon-bar a.item').click(function() {
@@ -41,6 +42,13 @@ $(function() {
 
     $('.player-more-i-wrapper').click(function(ev) {
         ev.stopPropagation();
-        $('.player-more-menu').show(100);
+        $('.share-menu').hide(100);
+        $('.player-more-menu').toggle(100);
+    });
+
+    $('.share-i-wrapper').click(function(ev) {
+        ev.stopPropagation();
+        $('.player-more-menu').hide(100);
+        $('.share-menu').toggle(100);
     });
 });

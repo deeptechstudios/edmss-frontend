@@ -10,7 +10,7 @@ label {
 }
 
 
-.feed-i-wrapper,
+.share-i-wrapper,
 .backward-i-wrapper,
 .play-i-wrapper,
 .forward-i-wrapper,
@@ -32,6 +32,7 @@ i:hover {
     top: 0;
     height: 100px;
     max-width: 100%;
+    z-index: 1;
 
     line-height: 100px;
     background-color: #333;
@@ -63,8 +64,8 @@ i:hover {
 /* Icon Bar */
 
 a.item {
-    border-bottom: 9px solid #555;
-    height: 100px;
+    border-bottom: 7px solid #555;
+    height: 95px;
 }
 
 a.item:not(.current) * {
@@ -72,7 +73,7 @@ a.item:not(.current) * {
 }
 
 a.item.current, a.item:hover {
-    border-bottom: 9px solid deepskyblue;
+    border-bottom: 7px solid deepskyblue;
 }
 
 /* Foundation small screen */
@@ -168,6 +169,17 @@ a.item.current, a.item:hover {
     font-weight: 600;
 }
 
+.track-share-i-wrapper i {
+    color: #c5c5c5;
+}
+
+/* Foundation small screen */
+@media only screen and (max-width: 40em) {
+    .track-share-i-wrapper i {
+        display: block !important;
+    }
+}
+
 
 /* Player Styles */
 
@@ -176,6 +188,7 @@ a.item.current, a.item:hover {
     bottom: 0;
     height: 100px;
     max-width: 100%;
+    z-index: 1;
 
     background-color: #333;
     color: white;
@@ -209,7 +222,6 @@ a.item.current, a.item:hover {
 .player-more-menu {
     display: none;
     position: fixed;
-    z-index: 100;
 
     right: 0;
     bottom: 100px;
@@ -233,8 +245,8 @@ a.item.current, a.item:hover {
     padding: 1em 0;
     border-top: 1px solid gray;
     list-style: none;
-    text-align: right;
     text-transform: uppercase;
+    text-align: left;
 }
 
 .player-more-menu li:hover {
@@ -246,5 +258,48 @@ a.item.current, a.item:hover {
 }
 
 .player-more-menu li * {
-    padding-right: 1em;
+    padding-left: 1em;
+    font-size: 1.6em;
+}
+
+/* Share Menu */
+
+.share-menu {
+    display: none;
+    position: fixed;
+
+    right: 0;
+    top: 100px;
+    height: 70px;
+
+    background-color: #333;
+    color: inherit;
+
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+.share-menu li {
+    display: inline-block;
+    list-style: none;
+    line-height: 70px;
+}
+
+.share-menu li:hover {
+    cursor: pointer;
+}
+
+.share-menu li * {
+    vertical-align: middle;
+    padding: 0 1em;
+}
+
+.share-menu li.facebook {
+    color: #3b5998;
+    background-color: white;
+}
+.share-menu li.twitter {
+    color: white;
+    background-color: #55acee;
 }
