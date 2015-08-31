@@ -20,6 +20,13 @@ i:hover {
     cursor: pointer;
 }
 
+.nav-wrapper, .player {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /* Block Styles */
 
 .body-wrapper {
@@ -292,6 +299,13 @@ a.item.current, a.item:hover {
     display: inline-block;
     list-style: none;
     line-height: 70px;
+    width: 70px;
+    text-align: center;
+    margin: 0 0.5em;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 
 .share-menu li:hover {
@@ -300,7 +314,6 @@ a.item.current, a.item:hover {
 
 .share-menu li * {
     vertical-align: middle;
-    padding: 0 1em;
 }
 
 .share-menu li.facebook {
