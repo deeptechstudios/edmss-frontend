@@ -283,16 +283,15 @@ a.item.current, a.item:hover {
     top: 100px;
     height: 70px;
 
-    background-color: #333;
-    color: inherit;
+    background-color: transparent;
+    /*color: inherit;
 
-    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.4);
-    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    /*
+    */
 }
 
 .share-menu ul {
-    margin: 0 0.4em;
+    margin: 0.2em 0.4em;
 }
 
 .share-menu li {
@@ -306,6 +305,10 @@ a.item.current, a.item:hover {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
 }
 
 .share-menu li:hover {
@@ -317,8 +320,8 @@ a.item.current, a.item:hover {
 }
 
 .share-menu li.facebook {
-    color: #3b5998;
-    background-color: white;
+    background-color: #3b5998;
+    color: white;
 }
 .share-menu li.twitter {
     color: white;
