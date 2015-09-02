@@ -111,6 +111,12 @@ a.item.current, a.item:hover {
     padding: 0 2em;
 }
 
+@media all and (max-width: 500px) {
+    .page-0 {
+        padding: 0 0.6em;
+    }
+}
+
 .page-1 {
     left: 100%;
     padding: 1em;
@@ -284,10 +290,6 @@ a.item.current, a.item:hover {
     height: 70px;
 
     background-color: transparent;
-    /*color: inherit;
-
-    /*
-    */
 }
 
 .share-menu ul {
