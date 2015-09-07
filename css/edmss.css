@@ -15,7 +15,7 @@ label {
 .play-i-wrapper,
 .forward-i-wrapper,
 .volume-i-wrapper,
-.player-more-i-wrapper,
+.more-i-wrapper,
 i:hover {
     cursor: pointer;
 }
@@ -88,6 +88,51 @@ a.item.current, a.item:hover {
     a.item i {
         margin-top: 25px;
     }
+}
+
+/* More Menu */
+
+.more-menu {
+    display: none;
+    position: fixed;
+
+    right: 0;
+    top: 100px;
+    width: 250px;
+
+    padding: 1em 0.2em;
+
+    background-color: #333;
+    color: inherit;
+
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+.more-menu ul {
+    margin: 0;
+}
+
+.more-menu li {
+    padding: 1em 0;
+    border-top: 1px solid gray;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.more-menu li:hover {
+    cursor: pointer;
+}
+
+.more-menu li:first-of-type {
+    border: none;
+}
+
+.more-menu li * {
+    padding-left: 1em;
+    font-size: 1.6em;
 }
 
 /* Page Styles */
@@ -236,48 +281,7 @@ a.item.current, a.item:hover {
     line-height: 100px;
 }
 
-.player-more-menu {
-    display: none;
-    position: fixed;
 
-    right: 0;
-    bottom: 100px;
-    width: 250px;
-
-    padding: 1em 0.2em;
-
-    background-color: #333;
-    color: inherit;
-
-    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.4);
-    box-shadow: 0 0 8px rgba(0,0,0,0.4);
-}
-
-.player-more-menu ul {
-    margin: 0;
-}
-
-.player-more-menu li {
-    padding: 1em 0;
-    border-top: 1px solid gray;
-    list-style: none;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-.player-more-menu li:hover {
-    cursor: pointer;
-}
-
-.player-more-menu li:first-of-type {
-    border: none;
-}
-
-.player-more-menu li * {
-    padding-left: 1em;
-    font-size: 1.6em;
-}
 
 /* Share Menu */
 
@@ -286,7 +290,7 @@ a.item.current, a.item:hover {
     position: fixed;
 
     right: 0;
-    top: 100px;
+    bottom: 100px;
     height: 70px;
 
     background-color: transparent;

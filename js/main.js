@@ -4,7 +4,7 @@
 
 $(function() {
     $('body').click(function() {
-        $('.player-more-menu').hide(100);
+        $('.more-menu').hide(100);
         $('.share-menu').hide(100);
     });
 
@@ -40,15 +40,15 @@ $(function() {
         $(this).find('i').css('display', 'none');
     });
 
-    $('.player-more-i-wrapper').click(function(ev) {
+    $('.more-i-wrapper').click(function(ev) {
         ev.stopPropagation();
         $('.share-menu').hide(100);
-        $('.player-more-menu').toggle(100);
+        $('.more-menu').toggle(100);
     });
 
     $('.share-i-wrapper').click(function(ev) {
         ev.stopPropagation();
-        $('.player-more-menu').hide(100);
+        $('.more-menu').hide(100);
         $('.share-menu').toggle(100);
     });
 });
