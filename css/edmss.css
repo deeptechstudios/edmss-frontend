@@ -92,6 +92,10 @@ a.item.current, a.item:hover {
 
 /* More Menu */
 
+.more-i-wrapper {
+    text-align: center;
+}
+
 .more-menu {
     display: none;
     position: fixed;
