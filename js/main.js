@@ -51,4 +51,14 @@ $(function() {
         $('.more-menu').hide(100);
         $('.share-menu').toggle(100);
     });
+
+    $('.volume-wrapper').hover(function() {
+        // Hover on
+        $('.volume-hidden').css('opacity', 1);
+    }, function() {
+        // Hover off
+        $('.volume-hidden').css('opacity', 0);
+    });
+
+    $('#volume-slider').slider();
 });

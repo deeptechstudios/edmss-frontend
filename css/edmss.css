@@ -14,7 +14,7 @@ label {
 .backward-i-wrapper,
 .play-i-wrapper,
 .forward-i-wrapper,
-.volume-i-wrapper,
+.volume-wrapper,
 .more-i-wrapper,
 i:hover {
     cursor: pointer;
@@ -99,7 +99,6 @@ a.item.current, a.item:hover {
 .more-menu {
     display: none;
     position: fixed;
-
     right: 0;
     top: 100px;
     width: 250px;
@@ -283,6 +282,20 @@ a.item.current, a.item:hover {
 .player-controls {
     text-align: center;
     line-height: 100px;
+}
+
+.volume-wrapper {
+    text-align: left;
+}
+
+.volume-hidden {
+    padding-left: 1em !important;
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+#volume-slider {
+    display: table-cell;
 }
 
 
