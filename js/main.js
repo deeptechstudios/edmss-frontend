@@ -60,5 +60,10 @@ $(function() {
         $('.volume-hidden').css('opacity', 0);
     });
 
-    $('#volume-slider').slider();
+    $('#volume-slider').slider({
+        range: "min",
+        min: 0,
+        max: 100,
+        value: 80
+    });
 });
