@@ -46,12 +46,6 @@ $(function() {
         $('.more-menu').toggle(100);
     });
 
-    $('.share-i-wrapper').click(function(ev) {
-        ev.stopPropagation();
-        $('.more-menu').hide(100);
-        $('.share-menu').toggle(100);
-    });
-
     $('.volume-wrapper').hover(function() {
         // Hover on
         $('.volume-hidden').css('opacity', 1);
@@ -65,7 +59,7 @@ $(function() {
     $('#playbar-slider').slider({
         range: "min",
         min: 0,
-        max: 100,
+        max: 10800,
         value: 0
     });
 
@@ -76,8 +70,33 @@ $(function() {
         value: 80
     });
 
-    $('.track-share-i-wrapper').click(function() {
-
+    // Share buttons
+    $('.menu-share').click(function() {
+        $('#btn-share-another').removeClass('active');
+        $('#btn-share-current').removeClass('active');
+        $('#btn-share-website').addClass('active');
         $('#share-popup').foundation('reveal', 'open');
+    });
+
+    $('.track-share-i-wrapper').click(function() {
+        $('#btn-share-website').removeClass('active');
+        $('#btn-share-current').removeClass('active');
+        $('#btn-share-another').addClass('active');
+        // TODO fill in mix
+        $('#share-popup').foundation('reveal', 'open');
+    });
+
+    $('.share-i-wrapper').click(function() {
+        $('#btn-share-another').removeClass('active');
+        $('#btn-share-website').removeClass('active');
+        $('#btn-share-current').addClass('active');
+        $('#share-popup').foundation('reveal', 'open');
+    });
+
+    $('#share-popup .button').click(function() {
+        $(this).parent().siblings().each(function() {
+            $(this).find('a').removeClass('active');
+        });
+        $(this).addClass('active');
     });
 });

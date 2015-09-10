@@ -432,6 +432,26 @@ a.item.current, a.item:hover {
 
 /* Popups */
 
-.reveal-modal {
-    width: 70%;
+#share-popup .button-group .button.active {
+    background-color: #005f8e;
+}
+
+.share-apps {
+
+}
+
+.share-apps li {
+    list-style: none;
+    line-height: 70px;
+    width: 70px;
+    text-align: center;
+    margin: 0 0.5em;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
 }
