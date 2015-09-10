@@ -57,7 +57,9 @@ $(function() {
         $('.volume-hidden').css('opacity', 1);
     }, function() {
         // Hover off
-        $('.volume-hidden').css('opacity', 0);
+        setTimeout(function() {
+            $('.volume-hidden').css('opacity', 0);
+        }, 400);
     });
 
     $('#volume-slider').slider({
@@ -65,5 +67,10 @@ $(function() {
         min: 0,
         max: 100,
         value: 80
+    });
+
+    $('.track-share-i-wrapper').click(function() {
+
+        $('#share-popup').foundation('reveal', 'open');
     });
 });
