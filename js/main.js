@@ -62,6 +62,13 @@ $(function() {
         }, 400);
     });
 
+    $('#playbar-slider').slider({
+        range: "min",
+        min: 0,
+        max: 100,
+        value: 0
+    });
+
     $('#volume-slider').slider({
         range: "min",
         min: 0,
