@@ -52,7 +52,8 @@ $(function() {
     }, function() {
         // Hover off
         setTimeout(function() {
-            $('.volume-hidden').css('opacity', 0);
+            if ($('.volume-wrapper:hover').length == 0)
+                $('.volume-hidden').css('opacity', 0);
         }, 400);
     });
 
