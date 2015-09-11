@@ -376,6 +376,17 @@ a.item.current, a.item:hover {
 
 /* Popups */
 
+#share-popup {
+    min-height: 0;
+    top: 20% !important;
+}
+
+@media all and (min-width: 40em) {
+    #share-popup {
+        max-width: 70%;
+    }
+}
+
 #share-popup .button-group .button.active {
     background-color: #005f8e;
 }
@@ -383,12 +394,6 @@ a.item.current, a.item:hover {
 #share-popup h4 {
     text-align: center;
     margin-bottom: 1em;
-}
-
-@media all and (min-width: 40em) {
-    #share-popup {
-        max-width: 70%;
-    }
 }
 
 .share-apps {
