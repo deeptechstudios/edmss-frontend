@@ -385,6 +385,12 @@ a.item.current, a.item:hover {
     margin-bottom: 1em;
 }
 
+@media all and (min-width: 40em) {
+    #share-popup {
+        max-width: 70%;
+    }
+}
+
 .share-apps {
     list-style: none;
 }
