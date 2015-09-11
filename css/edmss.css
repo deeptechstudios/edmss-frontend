@@ -178,8 +178,13 @@ a.item.current, a.item:hover {
     max-width: 500px;
 }
 
-.page-1 ul {
-    list-style-type: circle;
+.page-1 li {
+    margin: 0.4em 0;
+}
+
+.page-1 li i {
+    line-height: inherit;
+    margin-top: -2px;
 }
 
 .page-2 {
@@ -449,6 +454,11 @@ a.item.current, a.item:hover {
 .share-apps .direct {
     color: white;
     background-color: #333;
+}
+
+.share-apps .soundcloud {
+    color: white;
+    background-color: #ff8800;
 }
 
 #btn-copy-link {
