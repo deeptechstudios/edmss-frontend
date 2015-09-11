@@ -380,6 +380,11 @@ a.item.current, a.item:hover {
     background-color: #005f8e;
 }
 
+#share-popup h4 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
 .share-apps {
     list-style: none;
 }
