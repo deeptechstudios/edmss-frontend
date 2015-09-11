@@ -386,13 +386,21 @@ a.item.current, a.item:hover {
 
 .share-apps li {
     display: inline-block;
+
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.share-apps li:hover {
+    cursor: pointer;
 }
 
 .share-apps li .share-icon {
     line-height: 70px;
     width: 70px;
     text-align: center;
-    margin: 0 0.5em;
+    margin-left: calc(50% - 35px);
 
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -420,4 +428,14 @@ a.item.current, a.item:hover {
 .share-apps .google {
     color: white;
     background-color: #dd4b39;
+}
+
+.share-apps .direct {
+    color: white;
+    background-color: #333;
+}
+
+#btn-copy-link {
+    text-align: center;
+    padding: 0;
 }
