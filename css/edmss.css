@@ -374,62 +374,6 @@ a.item.current, a.item:hover {
 }
 
 
-/* Share Menu */
-
-.share-menu {
-    display: none;
-    position: fixed;
-
-    right: 0;
-    bottom: 105px;
-    height: 70px;
-
-    background-color: transparent;
-}
-
-.share-menu ul {
-    margin: 0.2em 0.4em;
-}
-
-.share-menu li {
-    display: inline-block;
-    list-style: none;
-    line-height: 70px;
-    width: 70px;
-    text-align: center;
-    margin: 0 0.5em;
-
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-
-    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.4);
-    box-shadow: 0 0 8px rgba(0,0,0,0.4);
-}
-
-.share-menu li:hover {
-    cursor: pointer;
-}
-
-.share-menu li * {
-    vertical-align: middle;
-}
-
-.share-menu li.facebook {
-    background-color: #3b5998;
-    color: white;
-}
-.share-menu li.twitter {
-    color: white;
-    background-color: #55acee;
-}
-.share-menu li.google {
-    color: white;
-    background-color: #dd4b39;
-}
-
-
 /* Popups */
 
 #share-popup .button-group .button.active {
@@ -437,11 +381,14 @@ a.item.current, a.item:hover {
 }
 
 .share-apps {
-
+    list-style: none;
 }
 
 .share-apps li {
-    list-style: none;
+    display: inline-block;
+}
+
+.share-apps li .share-icon {
     line-height: 70px;
     width: 70px;
     text-align: center;
@@ -454,4 +401,23 @@ a.item.current, a.item:hover {
     -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.4);
     -moz-box-shadow: 0 0 8px rgba(0,0,0,0.4);
     box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+.share-apps i {
+    vertical-align: middle;
+}
+
+.share-apps .facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.share-apps .twitter {
+    color: white;
+    background-color: #55acee;
+}
+
+.share-apps .google {
+    color: white;
+    background-color: #dd4b39;
 }
