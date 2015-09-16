@@ -1,0 +1,100 @@
+@import 'variables';
+@import 'mixins';
+
+#share-popup {
+  min-height: 0;
+  top: 20% !important;
+
+  h4 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  #share-popup {
+    max-width: 60%;
+  }
+
+  .share-info {
+    max-width: 80%;
+  }
+
+  .share-info p {
+    max-width: 85%;
+  }
+}
+
+.share-info {
+  margin: 0 auto;
+
+  img {
+    float: right;
+  }
+}
+
+.share-apps {
+  list-style: none;
+
+  li {
+    display: inline-block;
+
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+    .share-icon {
+      line-height: 70px;
+      width: 70px;
+      text-align: center;
+      margin-left: calc(50% - 35px);
+
+      @include border-radius(50%);
+
+      @include box-shadow(0, 0, 8px, rgba(0,0,0,0.4));
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  i {
+    vertical-align: middle;
+  }
+
+  .direct {
+    color: white;
+    background-color: $header-bg-color;
+  }
+
+  .facebook {
+    color: white;
+    background-color: $facebook-color;
+  }
+
+  .twitter {
+    color: white;
+    background-color: $twitter-color;
+  }
+
+  .google {
+    color: white;
+    background-color: $gplus-color;
+  }
+
+  .soundcloud {
+    color: white;
+    background-color: $soundcloud-color;
+  }
+}
+
+.share-apps, .link-box {
+  max-width: 600px !important;
+  margin: 0 auto !important;
+}
+
+#btn-copy-link {
+  text-align: center;
+  padding: 0;
+}

@@ -1,0 +1,40 @@
+@import '../vendor/foundation/settings';
+@import 'variables';
+@import 'mixins';
+
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  max-width: 100%;
+  z-index: 1;
+
+  line-height: 100px;
+  background-color: $header-bg-color;
+  color: white;
+
+  @include user-select(none);
+  @include box-shadow(0, 0, 8px, rgba(0,0,0,0.4));
+
+  * {
+    vertical-align: middle;
+  }
+}
+
+a.item {
+  background-color: $header-bg-color;
+  border-bottom: 7px solid #555;
+  height: 95px;
+
+  &:not(.current) * {
+    color: #bbb;
+  }
+
+  &.current, &:hover {
+    border-bottom: 7px solid deepskyblue;
+  }
+
+  @media only screen and (max-width: $small-breakpoint) {
+    margin-top: 25px;
+  }
+}
