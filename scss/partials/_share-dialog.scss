@@ -1,3 +1,4 @@
+@import '../vendor/foundation/settings';
 @import 'variables';
 @import 'mixins';
 
@@ -9,19 +10,14 @@
     text-align: center;
     margin-bottom: 1em;
   }
-}
 
-@media only screen and (min-width: 64.063em) {
-  #share-popup {
-    max-width: 60%;
-  }
-
-  .share-info {
-    max-width: 80%;
-  }
-
-  .share-info p {
-    max-width: 85%;
+  @media only screen {
+    @media (min-width: $medium-breakpoint) {
+      max-width: 60%;
+    }
+    @media (min-width: $large-breakpoint) {
+      max-width: 45%;
+    }
   }
 }
 
@@ -30,7 +26,28 @@
 
   img {
     float: right;
+    min-width: 80px;
+    min-height: 80px;
   }
+
+  h3 {
+    line-height: 1.4;
+  }
+
+  h5 {
+    margin-top: 0.5em;
+  }
+
+  @media only screen {
+    @media (min-width: $small-breakpoint) {
+      max-width: 80%;
+    }
+    @media (min-width: $medium-breakpoint) {
+      max-width: 70%;
+    }
+  }
+
+
 }
 
 .share-apps {

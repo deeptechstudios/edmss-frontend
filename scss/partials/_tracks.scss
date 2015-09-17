@@ -1,3 +1,4 @@
+@import '../vendor/foundation/settings';
 @import 'variables';
 
 .track {
@@ -27,6 +28,10 @@
   &:hover {
     cursor: pointer;
     background-color: #eee;
+  }
+
+  @media only screen and (min-width: $large-breakpoint) {
+    max-width: 90rem;
   }
 }
 

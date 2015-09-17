@@ -7067,7 +7067,7 @@ a.item {
     border-bottom: 7px solid deepskyblue; }
   @media only screen and (max-width: 40em) {
     a.item {
-      margin-top: 25px; } }
+      padding-top: 25px; } }
 
 /* Site Colors */
 /* Brand Colors */
@@ -7089,6 +7089,9 @@ a.item {
   .track:hover {
     cursor: pointer;
     background-color: #eee; }
+  @media only screen and (min-width: 90em) {
+    .track {
+      max-width: 90rem; } }
 
 .track-name {
   font-weight: 600; }
@@ -7204,20 +7207,29 @@ a.item {
   #share-popup h4 {
     text-align: center;
     margin-bottom: 1em; }
-
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 64em) {
   #share-popup {
-    max-width: 60%; }
+    max-width: 60%; } }
+@media only screen and (min-width: 90em) {
+  #share-popup {
+    max-width: 45%; } }
 
-  .share-info {
-    max-width: 80%; }
-
-  .share-info p {
-    max-width: 85%; } }
 .share-info {
   margin: 0 auto; }
   .share-info img {
-    float: right; }
+    float: right;
+    min-width: 80px;
+    min-height: 80px; }
+  .share-info h3 {
+    line-height: 1.4; }
+  .share-info h5 {
+    margin-top: 0.5em; }
+@media only screen and (min-width: 40em) {
+  .share-info {
+    max-width: 80%; } }
+@media only screen and (min-width: 64em) {
+  .share-info {
+    max-width: 70%; } }
 
 .share-apps {
   list-style: none; }
