@@ -7053,7 +7053,14 @@ body {
   user-select: none;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  /*
+  .nav-logo {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+  }
+  */ }
   .nav-wrapper * {
     vertical-align: middle; }
 
@@ -7203,19 +7210,17 @@ a.item {
 /* Brand Colors */
 #share-popup {
   min-height: 0;
-  top: 20% !important; }
+  top: 20% !important;
+  max-width: 750px; }
   #share-popup h4 {
     text-align: center;
     margin-bottom: 1em; }
-@media only screen and (min-width: 64em) {
-  #share-popup {
-    max-width: 60%; } }
-@media only screen and (min-width: 90em) {
-  #share-popup {
-    max-width: 45%; } }
 
 .share-info {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-left: 0; }
+  .share-info .share-img {
+    padding: 0; }
   .share-info img {
     float: right;
     min-width: 80px;
@@ -7227,9 +7232,6 @@ a.item {
 @media only screen and (min-width: 40em) {
   .share-info {
     max-width: 80%; } }
-@media only screen and (min-width: 64em) {
-  .share-info {
-    max-width: 70%; } }
 
 .share-apps {
   list-style: none; }
