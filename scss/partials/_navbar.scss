@@ -5,11 +5,11 @@
 .nav-wrapper {
   position: fixed;
   top: 0;
-  height: 100px;
+  height: $bar-height;
   max-width: 100%;
   z-index: 1;
 
-  line-height: 100px;
+  line-height: $bar-height;
   background-color: $header-bg-color;
   color: white;
 
@@ -27,12 +27,19 @@
     margin: 5px;
   }
   */
+
+}
+
+.icon-bar {
+  & > * {
+    padding: 0.7rem;
+  }
 }
 
 a.item {
   background-color: $header-bg-color;
   border-bottom: 7px solid #555;
-  height: 95px;
+  height: $bar-height - 5px;
 
   &:not(.current) * {
     color: #bbb;

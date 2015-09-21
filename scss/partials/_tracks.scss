@@ -2,8 +2,8 @@
 @import 'variables';
 
 .track {
-  height: 100px;
-  padding: 1em 0;
+  height: $bar-height;
+  padding: $track-padding;
   border-top: 1px solid darkgray;
 
   * {
@@ -13,7 +13,7 @@
   img {
     width: 60px;
     height: 60px;
-    margin: 5px 10px;
+    margin: 0 10px;
   }
 
   span {

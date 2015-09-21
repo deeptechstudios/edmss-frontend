@@ -6993,8 +6993,8 @@ body {
 
 .content-wrapper {
   position: fixed;
-  top: 100px;
-  bottom: 100px;
+  top: 80px;
+  bottom: 80px;
   width: 100%;
   padding: 0 3em;
   overflow-x: hidden;
@@ -7041,10 +7041,10 @@ body {
 .nav-wrapper {
   position: fixed;
   top: 0;
-  height: 100px;
+  height: 80px;
   max-width: 100%;
   z-index: 1;
-  line-height: 100px;
+  line-height: 80px;
   background-color: #333333;
   color: white;
   -webkit-user-select: none;
@@ -7064,10 +7064,13 @@ body {
   .nav-wrapper * {
     vertical-align: middle; }
 
+.icon-bar > * {
+  padding: 0.7rem; }
+
 a.item {
   background-color: #333333;
   border-bottom: 7px solid #555;
-  height: 95px; }
+  height: 75px; }
   a.item:not(.current) * {
     color: #bbb; }
   a.item.current, a.item:hover {
@@ -7079,15 +7082,15 @@ a.item {
 /* Site Colors */
 /* Brand Colors */
 .track {
-  height: 100px;
-  padding: 1em 0;
+  height: 80px;
+  padding: 10px 0;
   border-top: 1px solid darkgray; }
   .track * {
     vertical-align: middle; }
   .track img {
     width: 60px;
     height: 60px;
-    margin: 5px 10px; }
+    margin: 0 10px; }
   .track span {
     display: inline-block;
     position: relative; }
@@ -7111,7 +7114,7 @@ a.item {
 .player {
   position: fixed;
   bottom: 0;
-  height: 100px;
+  height: 80px;
   max-width: 100%;
   z-index: 1;
   background-color: #333;
@@ -7126,9 +7129,14 @@ a.item {
   .player * {
     vertical-align: middle; }
   .player img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-right: 5px; }
+  .player .playback-controls {
+    margin: 0 auto;
+    max-width: 500px; }
+  .player .volume-share-controls {
+    max-width: 500px; }
 
 #player-track-info {
   display: inline-block !important;
@@ -7140,7 +7148,7 @@ a.item {
 
 #playbar {
   position: fixed;
-  bottom: 100px;
+  bottom: 80px;
   left: 0;
   width: 100%;
   height: 5px;
@@ -7160,7 +7168,7 @@ a.item {
 
 .player-controls {
   text-align: center;
-  line-height: 100px; }
+  line-height: 80px; }
 
 .volume-wrapper {
   padding: 0 1em; }

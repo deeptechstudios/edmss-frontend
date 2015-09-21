@@ -4,7 +4,7 @@
 .player {
   position: fixed;
   bottom: 0;
-  height: 100px;
+  height: $bar-height;
   max-width: 100%;
   z-index: 1;
 
@@ -19,9 +19,18 @@
   }
 
   img {
-    width: 100px;
-    height: 100px;
+    width: $bar-height;
+    height: $bar-height;
     margin-right: 5px;
+  }
+
+  .playback-controls {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  .volume-share-controls {
+    max-width: 500px;
   }
 }
 
@@ -37,7 +46,7 @@
 
 #playbar {
   position: fixed;
-  bottom: 100px;
+  bottom: $bar-height;
   left: 0;
   width: 100%;
   height: 5px;
@@ -65,8 +74,9 @@
 
 .player-controls {
   text-align: center;
-  line-height: 100px;
+  line-height: $bar-height;
 }
+
 
 .volume-wrapper {
   padding: 0 1em;

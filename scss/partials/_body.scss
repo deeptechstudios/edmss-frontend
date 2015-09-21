@@ -17,8 +17,8 @@ body {
 
 .content-wrapper {
   position: fixed;
-  top: 100px;
-  bottom: 100px;
+  top: $bar-height;
+  bottom: $bar-height;
   width: 100%;
   padding: 0 3em;
 
