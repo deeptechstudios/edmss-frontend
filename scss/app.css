@@ -8497,6 +8497,11 @@ body {
 
 }
 */
+nav .input-field {
+  width: 600px; }
+  nav .input-field input {
+    background-color: rgba(255, 255, 255, 0.1); }
+
 /*** Colors ***/
 /*** Badges ***/
 /*** Buttons ***/

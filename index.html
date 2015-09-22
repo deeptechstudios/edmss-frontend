@@ -12,402 +12,407 @@
     <script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
-    <div class="body-wrapper">
+    <header>
         <nav>
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">Logo</a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <!--
-                <form>
-                    <div class="input-field">
-                        <input id="search" type="search" required>
-                        <label for="search"><i class="material-icons">search</i></label>
-                        <i class="material-icons">close</i>
-                    </div>
-                </form>
-                -->
+                <a href="#" data-activates="mobile-nav" class="left button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li class="active"><a href="#">Listen</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+                <div class="right">
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" placeholder="Search mixes" required>
+                            <label for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </div>
             </div>
         </nav>
-        <div class="content-wrapper">
-            <div class="page-0">
-                <!--
-                <div class="playlist-header row">
-                    <div class="s9 m9 l9 col">
-                        <label>Mix</label>
+        <ul class="side-nav" id="mobile-nav">
+            <li><a href="#">Listen</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content-wrapper">
+        <div class="page-0">
+            <!--
+            <div class="playlist-header row">
+                <div class="s9 m9 l9 col">
+                    <label>Mix</label>
+                </div>
+                <div class="s3 m3 l3 col">
+                    <div class="row">
+                        <div class="s6 m6 l6 col">
+                            <label></label>
+                        </div>
+                        <div class="s6 m6 l6 col" style="text-align: center;">
+                            <label><i class="fa fa-clock-o" style="vertical-align: middle;"></i></label>
+                        </div>
                     </div>
-                    <div class="s3 m3 l3 col">
+                </div>
+            </div>
+            -->
+            <div class="card">
+                <div class="track row">
+                    <div class="track-info s9 col">
+                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                    <span>
+                        <span class="track-name">Mix Name</span><br/>
+                        <span class="track-artist">Mix Artist</span>
+                    </span>
+                    </div>
+                    <div class="s3 m2 col">
+                        <div class="row" style="line-height: 68px">
+                            <div class="s6 col">
+                                <div class="track-share-i-wrapper">
+                                    <i class="material-icons small">share</i>
+                                </div>
+                            </div>
+                            <div class="s6 col">4:20</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="track row">
+                    <div class="track-info s9 col">
+                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                    <span>
+                        <span class="track-name">Mix Name</span><br/>
+                        <span class="track-artist">Mix Artist</span>
+                    </span>
+                    </div>
+                    <div class="s3 m2 col">
+                        <div class="row" style="line-height: 68px">
+                            <div class="s6 col">
+                                <div class="track-share-i-wrapper">
+                                    <i class="material-icons small">share</i>
+                                </div>
+                            </div>
+                            <div class="s6 col">4:20</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="track row">
+                    <div class="track-info s9 col">
+                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                    <span>
+                        <span class="track-name">Mix Name</span><br/>
+                        <span class="track-artist">Mix Artist</span>
+                    </span>
+                    </div>
+                    <div class="s3 m2 col">
+                        <div class="row" style="line-height: 68px">
+                            <div class="s6 col">
+                                <div class="track-share-i-wrapper">
+                                    <i class="material-icons small">share</i>
+                                </div>
+                            </div>
+                            <div class="s6 col">4:20</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="track row">
+                    <div class="track-info s9 col">
+                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                    <span>
+                        <span class="track-name">Mix Name</span><br/>
+                        <span class="track-artist">Mix Artist</span>
+                    </span>
+                    </div>
+                    <div class="s3 m2 col">
+                        <div class="row" style="line-height: 68px">
+                            <div class="s6 col">
+                                <div class="track-share-i-wrapper">
+                                    <i class="material-icons small">share</i>
+                                </div>
+                            </div>
+                            <div class="s6 col">4:20</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="track row">
+                    <div class="track-info s9 col">
+                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                    <span>
+                        <span class="track-name">Mix Name</span><br/>
+                        <span class="track-artist">Mix Artist</span>
+                    </span>
+                    </div>
+                    <div class="s3 m2 col">
+                        <div class="row" style="line-height: 68px">
+                            <div class="s6 col">
+                                <div class="track-share-i-wrapper">
+                                    <i class="material-icons small">share</i>
+                                </div>
+                            </div>
+                            <div class="s6 col">4:20</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="track row">
+                    <div class="track-info s9 col">
+                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                    <span>
+                        <span class="track-name">Mix Name</span><br/>
+                        <span class="track-artist">Mix Artist</span>
+                    </span>
+                    </div>
+                    <div class="s3 m2 col">
+                        <div class="row" style="line-height: 68px">
+                            <div class="s6 col">
+                                <div class="track-share-i-wrapper">
+                                    <i class="material-icons small">share</i>
+                                </div>
+                            </div>
+                            <div class="s6 col">4:20</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="track row">
+                    <div class="track-info s9 col">
+                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                    <span>
+                        <span class="track-name">Mix Name</span><br/>
+                        <span class="track-artist">Mix Artist</span>
+                    </span>
+                    </div>
+                    <div class="s3 m2 col">
+                        <div class="row" style="line-height: 68px">
+                            <div class="s6 col">
+                                <div class="track-share-i-wrapper">
+                                    <i class="material-icons small">share</i>
+                                </div>
+                            </div>
+                            <div class="s6 col">4:20</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="track row">
+                    <div class="track-info s9 col">
+                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                    <span>
+                        <span class="track-name">Mix Name</span><br/>
+                        <span class="track-artist">Mix Artist</span>
+                    </span>
+                    </div>
+                    <div class="s3 m2 col">
+                        <div class="row" style="line-height: 68px">
+                            <div class="s6 col">
+                                <div class="track-share-i-wrapper">
+                                    <i class="material-icons small">share</i>
+                                </div>
+                            </div>
+                            <div class="s6 col">4:20</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-1">
+            <div class="row">
+                <div class="m6 l6 col">
+                    <div style="text-align: center; line-height: 100%; margin-bottom: 20px;">
+                        BIG LOGO HERE
+                    </div>
+                    <ul class="share-apps">
+                        <li><div class="share-icon facebook"><i class="fa fa-2x fa-facebook"></i></div></li>
+                        <li><div class="share-icon twitter"><i class="fa fa-2x fa-twitter"></i></div></li>
+                        <!--<li><div class="share-icon google"><i class="fa fa-2x fa-google-plus"></i></div></li>-->
+                        <li><div class="share-icon soundcloud"><i class="fa fa-2x fa-soundcloud"></i></div></li>
+                    </ul>
+                </div>
+                <div class="m6 l6 col">
+                    <h3>About EDM Sound System</h3>
+                    <p>
+                        EDM Sound System is a radio show hosted on WREK in Atlanta, bringing you the best of local DJ's
+                        and producers, <em>every Saturday night from 9:00 PM - 12:00 AM ET.</em>
+                        <br/><br/>
+                        Tune into EDM Sound System for:
+                    <ul class="fa-ul">
+                        <li><i class="fa fa-li fa-headphones"></i>A wide variety of music spanning the entire EDM spectrum</li>
+                        <li><i class="fa fa-li fa-random "></i>The hottest mixes from the local scene</li>
+                        <li><i class="fa fa-li fa-microphone"></i>Exclusive interviews with hit artists</li>
+                        <li><i class="fa fa-li fa-newspaper-o"></i>Ticket give-aways for upcoming shows</li>
+                        <li>...and more!</li>
+                    </ul>
+                    <p>
+                        If you're in the Atlanta area, you can tune in on 91.1 FM. You can also listen to the show right here
+                        on this very website! During the show, the player will automatically connect to the online live stream,
+                        courtesy of WREK.
+                    </p>
+                    <ul class="share-apps hide-on-med-and-up">
+                        <li><div class="share-icon facebook"><i class="fa fa-2x fa-facebook"></i></div></li>
+                        <li><div class="share-icon twitter"><i class="fa fa-2x fa-twitter"></i></div></li>
+                        <!--<li><div class="share-icon google"><i class="fa fa-2x fa-google-plus"></i></div></li>-->
+                        <li><div class="share-icon soundcloud"><i class="fa fa-2x fa-soundcloud"></i></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-2">
+            <div class="row">
+                <div class="m12 l12 col">
+                    <h3>Contact Us</h3>
+                    <p>Use the form below to drop us a note, or if you're listening live, you can call the studio!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="m6 col">
+                    <form>
+                        <h5>Send Us a Message</h5>
                         <div class="row">
-                            <div class="s6 m6 l6 col">
-                                <label></label>
+                            <div class="input-field m6 col">
+                                <label for="name">Name<span style="color: red">*</span></label>
+                                <input id="name" name="name" type="text" required>
                             </div>
-                            <div class="s6 m6 l6 col" style="text-align: center;">
-                                <label><i class="fa fa-clock-o" style="vertical-align: middle;"></i></label>
+                            <div class="input-field m6 col">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email">
                             </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="input-field l12 col">
+                                <select id="type" name="type">
+                                    <option>General</option>
+                                    <option>Shoutout</option>
+                                    <option>Promotions</option>
+                                    <option>Something</option>
+                                </select>
+                                <label for="type">Inquiry Type<span style="color: red">*</span></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field l12 col">
+                                <label for="message">Message<span style="color: red">*</span></label>
+                                <textarea id="message" class="materialize-textarea" name="message" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="row right-align">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+                        </div>
+                    </form>
                 </div>
-                -->
-                <div class="card">
-                    <div class="track row">
-                        <div class="track-info s9 col">
-                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                        </div>
-                        <div class="s3 m2 col">
-                            <div class="row" style="line-height: 68px">
-                                <div class="s6 col">
-                                    <div class="track-share-i-wrapper">
-                                        <i class="material-icons small">share</i>
-                                    </div>
-                                </div>
-                                <div class="s6 col">4:20</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="track row">
-                        <div class="track-info s9 col">
-                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                        </div>
-                        <div class="s3 m2 col">
-                            <div class="row" style="line-height: 68px">
-                                <div class="s6 col">
-                                    <div class="track-share-i-wrapper">
-                                        <i class="material-icons small">share</i>
-                                    </div>
-                                </div>
-                                <div class="s6 col">4:20</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="track row">
-                        <div class="track-info s9 col">
-                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                        </div>
-                        <div class="s3 m2 col">
-                            <div class="row" style="line-height: 68px">
-                                <div class="s6 col">
-                                    <div class="track-share-i-wrapper">
-                                        <i class="material-icons small">share</i>
-                                    </div>
-                                </div>
-                                <div class="s6 col">4:20</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="track row">
-                        <div class="track-info s9 col">
-                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                        </div>
-                        <div class="s3 m2 col">
-                            <div class="row" style="line-height: 68px">
-                                <div class="s6 col">
-                                    <div class="track-share-i-wrapper">
-                                        <i class="material-icons small">share</i>
-                                    </div>
-                                </div>
-                                <div class="s6 col">4:20</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="track row">
-                        <div class="track-info s9 col">
-                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                        </div>
-                        <div class="s3 m2 col">
-                            <div class="row" style="line-height: 68px">
-                                <div class="s6 col">
-                                    <div class="track-share-i-wrapper">
-                                        <i class="material-icons small">share</i>
-                                    </div>
-                                </div>
-                                <div class="s6 col">4:20</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="track row">
-                        <div class="track-info s9 col">
-                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                        </div>
-                        <div class="s3 m2 col">
-                            <div class="row" style="line-height: 68px">
-                                <div class="s6 col">
-                                    <div class="track-share-i-wrapper">
-                                        <i class="material-icons small">share</i>
-                                    </div>
-                                </div>
-                                <div class="s6 col">4:20</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="track row">
-                        <div class="track-info s9 col">
-                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                        </div>
-                        <div class="s3 m2 col">
-                            <div class="row" style="line-height: 68px">
-                                <div class="s6 col">
-                                    <div class="track-share-i-wrapper">
-                                        <i class="material-icons small">share</i>
-                                    </div>
-                                </div>
-                                <div class="s6 col">4:20</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="track row">
-                        <div class="track-info s9 col">
-                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                        </div>
-                        <div class="s3 m2 col">
-                            <div class="row" style="line-height: 68px">
-                                <div class="s6 col">
-                                    <div class="track-share-i-wrapper">
-                                        <i class="material-icons small">share</i>
-                                    </div>
-                                </div>
-                                <div class="s6 col">4:20</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="m6 mpush-6 l6 lpush-6 col">
+                    <h5>During Live Shows</h5>
+                    <p>
+                        EDM Sound System airs every Saturday from 9:00 PM - 12:00 AM ET. During this time, we
+                        encourage you to call us at the studio and let us know what you think of the show!
+                    </p>
+                    <p>
+                        The number for the WREK studio is: (404) 894-2468.<br/>
+                        Hope to hear from you!
+                    </p>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="page-1">
-                <div class="row">
-                    <div class="m6 l6 col">
-                        <div style="text-align: center; line-height: 100%; margin-bottom: 20px;">
-                            BIG LOGO HERE
-                        </div>
-                        <ul class="share-apps">
-                            <li><div class="share-icon facebook"><i class="fa fa-2x fa-facebook"></i></div></li>
-                            <li><div class="share-icon twitter"><i class="fa fa-2x fa-twitter"></i></div></li>
-                            <!--<li><div class="share-icon google"><i class="fa fa-2x fa-google-plus"></i></div></li>-->
-                            <li><div class="share-icon soundcloud"><i class="fa fa-2x fa-soundcloud"></i></div></li>
-                        </ul>
-                    </div>
-                    <div class="m6 l6 col">
-                        <h3>About EDM Sound System</h3>
-                        <p>
-                            EDM Sound System is a radio show hosted on WREK in Atlanta, bringing you the best of local DJ's
-                            and producers, <em>every Saturday night from 9:00 PM - 12:00 AM ET.</em>
-                            <br/><br/>
-                            Tune into EDM Sound System for:
-                        <ul class="fa-ul">
-                            <li><i class="fa fa-li fa-headphones"></i>A wide variety of music spanning the entire EDM spectrum</li>
-                            <li><i class="fa fa-li fa-random "></i>The hottest mixes from the local scene</li>
-                            <li><i class="fa fa-li fa-microphone"></i>Exclusive interviews with hit artists</li>
-                            <li><i class="fa fa-li fa-newspaper-o"></i>Ticket give-aways for upcoming shows</li>
-                            <li>...and more!</li>
-                        </ul>
-                        <p>
-                            If you're in the Atlanta area, you can tune in on 91.1 FM. You can also listen to the show right here
-                            on this very website! During the show, the player will automatically connect to the online live stream,
-                            courtesy of WREK.
-                        </p>
-                        <ul class="share-apps hide-on-med-and-up">
-                            <li><div class="share-icon facebook"><i class="fa fa-2x fa-facebook"></i></div></li>
-                            <li><div class="share-icon twitter"><i class="fa fa-2x fa-twitter"></i></div></li>
-                            <!--<li><div class="share-icon google"><i class="fa fa-2x fa-google-plus"></i></div></li>-->
-                            <li><div class="share-icon soundcloud"><i class="fa fa-2x fa-soundcloud"></i></div></li>
-                        </ul>
+    <div class="player row z-depth-1">
+        <div id="playbar">
+            <div id="playbar-slider"></div>
+        </div>
+        <div class="track-info s3 m4 col" style="min-width: 100px;">
+            <img src="http://images-mix.netdna-ssl.com/w/100/h/100/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+            <span id="player-track-info" class="hide-for-small">
+                <span class="track-name">Mix Name</span><br/>
+                <span class="track-artist">Mix Artist</span>
+            </span>
+        </div>
+        <div class="s7 m4 col">
+            <div class="player-controls playback-controls row">
+                <div class="s3 offset-s1 col">
+                    <div class="backward-i-wrapper">
+                        <i class="material-icons small waves-effect">skip_previous</i>
                     </div>
                 </div>
-            </div>
-
-            <div class="page-2">
-                <div class="row">
-                    <div class="m12 l12 col">
-                        <h3>Contact Us</h3>
-                        <p>Use the form below to drop us a note, or if you're listening live, you can call the studio!</p>
+                <div class="s4 col">
+                    <div class="play-i-wrapper">
+                        <i class="material-icons medium waves-effect">play_arrow</i>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="m6 col">
-                        <form>
-                            <h5>Send Us a Message</h5>
-                            <div class="row">
-                                <div class="input-field m6 col">
-                                    <label for="name">Name<span style="color: red">*</span></label>
-                                    <input id="name" name="name" type="text" required>
-                                </div>
-                                <div class="input-field m6 col">
-                                    <label for="email">Email</label>
-                                    <input id="email" name="email" type="email">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field l12 col">
-                                    <select id="type" name="type">
-                                        <option>General</option>
-                                        <option>Shoutout</option>
-                                        <option>Promotions</option>
-                                        <option>Something</option>
-                                    </select>
-                                    <label for="type">Inquiry Type<span style="color: red">*</span></label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field l12 col">
-                                    <label for="message">Message<span style="color: red">*</span></label>
-                                    <textarea id="message" class="materialize-textarea" name="message" rows="5"></textarea>
-                                </div>
-                            </div>
-                            <div class="row right-align">
-                                <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="m6 mpush-6 l6 lpush-6 col">
-                        <h5>During Live Shows</h5>
-                        <p>
-                            EDM Sound System airs every Saturday from 9:00 PM - 12:00 AM ET. During this time, we
-                            encourage you to call us at the studio and let us know what you think of the show!
-                        </p>
-                        <p>
-                            The number for the WREK studio is: (404) 894-2468.<br/>
-                            Hope to hear from you!
-                        </p>
+                <div class="s3 col">
+                    <div class="forward-i-wrapper">
+                        <i class="material-icons small waves-effect">skip_next</i>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="player row z-depth-1">
-            <div id="playbar">
-                <div id="playbar-slider"></div>
-            </div>
-            <div class="track-info s3 m4 col" style="min-width: 100px;">
-                <img src="http://images-mix.netdna-ssl.com/w/100/h/100/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                <span id="player-track-info" class="hide-for-small">
-                    <span class="track-name">Mix Name</span><br/>
-                    <span class="track-artist">Mix Artist</span>
-                </span>
-            </div>
-            <div class="s7 m4 col">
-                <div class="player-controls playback-controls row">
-                    <div class="s3 offset-s1 col">
-                        <div class="backward-i-wrapper">
-                            <i class="material-icons small waves-effect">skip_previous</i>
+        <div class="volume-share-controls s2 m4 col">
+            <div class="player-controls row">
+                <div class="hide-on-small-and-down m9 offset-s1 col">
+                    <div class="volume-wrapper row">
+                        <div class="volume-hidden m2 col">
+                            <i class="material-icons small">volume_mute</i>
                         </div>
-                    </div>
-                    <div class="s4 col">
-                        <div class="play-i-wrapper">
-                            <i class="material-icons medium waves-effect">play_arrow</i>
+                        <div id="slider-wrapper" class="volume-hidden m7 col">
+                            <div id="volume-slider"></div>
                         </div>
-                    </div>
-                    <div class="s3 col">
-                        <div class="forward-i-wrapper">
-                            <i class="material-icons small waves-effect">skip_next</i>
+                        <div class="m2 col">
+                            <i class="material-icons small">volume_up</i>
                         </div>
                     </div>
                 </div>
+                <div class="s2 m3 col">
+                    <div class="share-i-wrapper">
+                        <i class="material-icons small waves-effect">share</i>
+                    </div>
+                </div>
             </div>
-            <div class="volume-share-controls s2 m4 col">
-                <div class="player-controls row">
-                    <div class="hide-on-small-and-down m9 offset-s1 col">
-                        <div class="volume-wrapper row">
-                            <div class="volume-hidden m2 col">
-                                <i class="material-icons small">volume_mute</i>
+        </div>
+    </div>
+
+    <div id="share-popup" class="modal">
+        <div class="modal-content">
+            <h1>Sharing is Caring!</h1>
+            <div class="row">
+                <div class="l12 col">
+                    <div class="share-info panel">
+                        <div class="row">
+                            <div class="share-img s3 col">
+                                <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
                             </div>
-                            <div id="slider-wrapper" class="volume-hidden m7 col">
-                                <div id="volume-slider"></div>
-                            </div>
-                            <div class="m2 col">
-                                <i class="material-icons small">volume_up</i>
+                            <div class="s9 col">
+                                <h3>Mix Name</h3>
+                                <h5>Mix Artist</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="s2 m3 col">
-                        <div class="share-i-wrapper">
-                            <i class="material-icons small waves-effect">share</i>
+                </div>
+                <div class="l12 col">
+                    <br/>
+                </div>
+                <div class="l12 col">
+                    <h4>How would you like to share this jam?</h4>
+                </div>
+                <div class="l12 col">
+                    <ul class="share-apps sblock-grid-4">
+                        <li><div class="share-icon facebook"><i class="fa fa-2x fa-facebook"></i></div>FACEBOOK</li>
+                        <li><div class="share-icon twitter"><i class="fa fa-2x fa-twitter"></i></div>TWITTER</li>
+                        <li><div class="share-icon google"><i class="fa fa-2x fa-google-plus"></i></div>GOOGLE+</li>
+                        <li><div class="share-icon direct"><i class="fa fa-2x fa-link"></i></div>LINK</li>
+                    </ul>
+                </div>
+                <div class="l12 col">
+                    <div class="link-box row">
+                        <label for="direct-link">Direct Link</label>
+                        <div class="s11 col">
+                            <input id="direct-link" type="text" value="http://edmsoundsystem.fm/kingdom+rave+set+may+2015" readonly>
+                        </div>
+                        <div class="s1 col">
+                            <a href="#" id="btn-copy-link" class="button postfix"><i class="fa fa-copy"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div id="share-popup" class="modal">
-            <div class="modal-content">
-                <h1>Sharing is Caring!</h1>
-                <div class="row">
-                    <div class="l12 col">
-                        <div class="share-info panel">
-                            <div class="row">
-                                <div class="share-img s3 col">
-                                    <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                                </div>
-                                <div class="s9 col">
-                                    <h3>Mix Name</h3>
-                                    <h5>Mix Artist</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="l12 col">
-                        <br/>
-                    </div>
-                    <div class="l12 col">
-                        <h4>How would you like to share this jam?</h4>
-                    </div>
-                    <div class="l12 col">
-                        <ul class="share-apps sblock-grid-4">
-                            <li><div class="share-icon facebook"><i class="fa fa-2x fa-facebook"></i></div>FACEBOOK</li>
-                            <li><div class="share-icon twitter"><i class="fa fa-2x fa-twitter"></i></div>TWITTER</li>
-                            <li><div class="share-icon google"><i class="fa fa-2x fa-google-plus"></i></div>GOOGLE+</li>
-                            <li><div class="share-icon direct"><i class="fa fa-2x fa-link"></i></div>LINK</li>
-                        </ul>
-                    </div>
-                    <div class="l12 col">
-                        <div class="link-box row">
-                            <label for="direct-link">Direct Link</label>
-                            <div class="s11 col">
-                                <input id="direct-link" type="text" value="http://edmsoundsystem.fm/kingdom+rave+set+may+2015" readonly>
-                            </div>
-                            <div class="s1 col">
-                                <a href="#" id="btn-copy-link" class="button postfix"><i class="fa fa-copy"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="modal-close">&#215;</a>
-        </div>
+        <a class="modal-close">&#215;</a>
     </div>
 
     <script src="js/vendor/jquery.js"></script>
