@@ -1,12 +1,10 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 // Body styles
 
+/*
 body {
-  margin-top: -21px; /* WTF WHY DO I HAVE TO DO THIS */
-  background-color: #151515;
-
   font-family: "Titillium Web";
 }
 
@@ -14,16 +12,20 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+*/
+
+.row {
+  margin-bottom: 0;
+}
 
 .content-wrapper {
   position: fixed;
-  top: $bar-height;
-  bottom: $bar-height;
+  top: $navbar-height;
+  bottom: $player-height;
   width: 100%;
   padding: 0 3em;
 
   overflow-x: hidden;
-  background-color: $body-bg-color;
 }
 
 // Page styles
@@ -54,7 +56,6 @@ body {
   @extend .page;
 
   left: 100%;
-  padding: 1em;
 
   p {
     max-width: 500px;
@@ -74,7 +75,10 @@ body {
   @extend .page;
 
   left: 200%;
-  padding: 1em;
+
+  .row {
+    max-width: 1200px;
+  }
 
   .columns, form a {
     float: right;

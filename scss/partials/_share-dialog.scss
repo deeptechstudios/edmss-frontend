@@ -1,6 +1,5 @@
-@import '../vendor/foundation/settings';
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 #share-popup {
   min-height: 0;
@@ -36,7 +35,7 @@
   }
 
   @media only screen {
-    @media (min-width: $small-breakpoint) {
+    @media (min-width: $small-screen) {
       max-width: 80%;
     }
   }
@@ -74,7 +73,7 @@
 
   .direct {
     color: white;
-    background-color: $header-bg-color;
+    background-color: $primary-color;
   }
 
   .facebook {

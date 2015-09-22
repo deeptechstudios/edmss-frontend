@@ -1,9 +1,9 @@
-@import '../vendor/foundation/settings';
-@import 'variables';
+@import "variables";
 
 .track {
-  height: $bar-height;
+  height: $player-height;
   padding: $track-padding;
+
   border-top: 1px solid darkgray;
 
   * {
@@ -30,7 +30,7 @@
     background-color: #eee;
   }
 
-  @media only screen and (min-width: $large-breakpoint) {
+  @media only screen and (min-width: $large-screen-up) {
     max-width: 90rem;
   }
 }
@@ -40,5 +40,7 @@
 }
 
 .track-share-i-wrapper i {
+  line-height: 68px;
+  opacity: 0;
   color: #c5c5c5;
 }

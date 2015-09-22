@@ -1,7 +1,7 @@
-@import '../vendor/foundation/settings';
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
+/*
 .nav-wrapper {
   position: fixed;
   top: 0;
@@ -26,30 +26,7 @@
     height: 90px;
     margin: 5px;
   }
-  */
+
 
 }
-
-.icon-bar {
-  & > * {
-    padding: 0.7rem;
-  }
-}
-
-a.item {
-  background-color: $header-bg-color;
-  border-bottom: 7px solid #555;
-  height: $bar-height - 5px;
-
-  &:not(.current) * {
-    color: #bbb;
-  }
-
-  &.current, &:hover {
-    border-bottom: 7px solid deepskyblue;
-  }
-
-  @media only screen and (max-width: $small-breakpoint) {
-    padding-top: 25px;
-  }
-}
+*/

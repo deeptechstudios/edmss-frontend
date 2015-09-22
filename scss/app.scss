@@ -1,12 +1,12 @@
-// Foundation by ZURB
-@import 'vendor/foundation';
-@import 'vendor/foundation/settings';
-@import 'vendor/normalize';
+// Materialize
+@import "vendor/materialize/materialize";
 
 // Partials
+
 @import 'partials/general';
 @import 'partials/body';
 @import 'partials/navbar';
 @import 'partials/tracks';
 @import 'partials/player';
 @import 'partials/share-dialog';
+
