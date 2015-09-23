@@ -63,10 +63,6 @@ body {
 
   left: 100%;
 
-  p {
-    max-width: 500px;
-  }
-
   li {
     margin: 0.4em 0;
 
@@ -74,6 +70,10 @@ body {
       line-height: inherit;
       margin-top: -2px;
     }
+  }
+
+  .row {
+    max-width: 1300px;
   }
 }
 
@@ -83,7 +83,7 @@ body {
   left: 200%;
 
   .row {
-    max-width: 1200px;
+    max-width: 1300px;
   }
 
   .columns, form a {

@@ -8430,18 +8430,18 @@ body {
     padding: 0 0.6em; } }
 .page-1 {
   left: 100%; }
-  .page-1 p {
-    max-width: 500px; }
   .page-1 li {
     margin: 0.4em 0; }
     .page-1 li i {
       line-height: inherit;
       margin-top: -2px; }
+  .page-1 .row {
+    max-width: 1300px; }
 
 .page-2 {
   left: 200%; }
   .page-2 .row {
-    max-width: 1200px; }
+    max-width: 1300px; }
   .page-2 .columns, .page-2 form a {
     float: right; }
 
