@@ -64,11 +64,18 @@
                 <div class="card-content">
                     <span class="card-title black-text">Mixes</span>
                     <p>All the latest shows, from big names to local artists.</p>
-                    <div class="row">
+                    <div class="mix-search row">
                         <div class="s12 m6 col">
-                            <div class="input-field">
-                                <input id="search" type="text" required>
-                                <label for="search">Search mixes</label>
+                            <div class="row valign-wrapper">
+                                <div class="s1 col valign center-align">
+                                    <i class="material-icons small">search</i>
+                                </div>
+                                <div class="s11 col valign">
+                                    <div class="input-field">
+                                        <input id="search" type="text" required>
+                                        <label for="search">Search mixes</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!--
@@ -262,12 +269,11 @@
                                 on this very website! During the show, the player will automatically connect to the online live stream,
                                 courtesy of WREK.
                             </p>
-                            <ul class="share-apps hide-on-med-and-up">
-                                <li><div class="share-icon facebook"><i class="fa fa-2x fa-facebook"></i></div></li>
-                                <li><div class="share-icon twitter"><i class="fa fa-2x fa-twitter"></i></div></li>
-                                <!--<li><div class="share-icon google"><i class="fa fa-2x fa-google-plus"></i></div></li>-->
-                                <li><div class="share-icon soundcloud"><i class="fa fa-2x fa-soundcloud"></i></div></li>
-                            </ul>
+                            <div class="share-apps row hide-on-med-and-up">
+                                <div class="s4 col"><div class="share-icon facebook"><i class="fa fa-2x fa-facebook"></i></div></div>
+                                <div class="s4 col"><div class="share-icon twitter"><i class="fa fa-2x fa-twitter"></i></div></div>
+                                <div class="s4 col"><div class="share-icon soundcloud"><i class="fa fa-2x fa-soundcloud"></i></div></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -276,12 +282,11 @@
                         <div class="card-content">
                             BIG LOGO HERE?
                         </div>
-                        <ul class="share-apps ">
-                            <li><div class="share-icon facebook"><i class="fa fa-2x fa-facebook"></i></div></li>
-                            <li><div class="share-icon twitter"><i class="fa fa-2x fa-twitter"></i></div></li>
-                            <!--<li><div class="share-icon google"><i class="fa fa-2x fa-google-plus"></i></div></li>-->
-                            <li><div class="share-icon soundcloud"><i class="fa fa-2x fa-soundcloud"></i></div></li>
-                        </ul>
+                        <div class="share-apps row">
+                            <div class="s4 col"><div class="share-icon facebook"><i class="fa fa-2x fa-facebook"></i></div></div>
+                            <div class="s4 col"><div class="share-icon twitter"><i class="fa fa-2x fa-twitter"></i></div></div>
+                            <div class="s4 col"><div class="share-icon soundcloud"><i class="fa fa-2x fa-soundcloud"></i></div></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -360,52 +365,66 @@
         </div>
     </div>
 
+    <!-- MUSIC PLAYER -->
     <div class="player row">
+
+        <!-- SEEK BAR -->
         <div id="playbar">
             <div id="playbar-slider"></div>
         </div>
-        <div class="track-info s3 m4 col" style="min-width: 100px;">
+
+        <!-- CURRENT TRACK INFO -->
+        <div class="track-info s2 m4 col" style="min-width: 100px;">
             <img src="http://images-mix.netdna-ssl.com/w/100/h/100/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
             <span id="player-track-info" class="hide-for-small">
                 <span class="track-name">Mix Name</span><br/>
                 <span class="track-artist">Mix Artist</span>
             </span>
         </div>
-        <div class="s7 m4 col">
+
+        <!-- PLAYBACK CONTROLS -->
+        <div class="s9 m4 col">
             <div class="player-controls playback-controls row">
-                <div class="s3 offset-s1 col">
+                <div class="s3 m3 offset-m1 col">
                     <div class="backward-i-wrapper">
                         <i class="material-icons small waves-effect">skip_previous</i>
                     </div>
                 </div>
-                <div class="s4 col">
+                <div class="s3 m4 col">
                     <div class="play-i-wrapper">
                         <i class="material-icons medium waves-effect">play_arrow</i>
                     </div>
                 </div>
-                <div class="s3 col">
+                <div class="s3 m3 col">
                     <div class="forward-i-wrapper">
                         <i class="material-icons small waves-effect">skip_next</i>
                     </div>
                 </div>
+                <div class="hide-on-med-and-up s3 col">
+                    <div class="share-i-wrapper">
+                        <i class="material-icons small waves-effect">share</i>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="volume-share-controls s2 m4 col">
+
+        <!-- VOLUME & SHARE -->
+        <div class="volume-share-controls s3 col hide-on-small-and-down">
             <div class="player-controls row">
-                <div class="hide-on-small-and-down m9 offset-s1 col">
+                <div class="hide-on-med-and-down l9 col">
                     <div class="volume-wrapper row">
-                        <div class="volume-hidden m2 col">
+                        <div class="volume-hidden m3 col">
                             <i class="material-icons small">volume_mute</i>
                         </div>
-                        <div id="slider-wrapper" class="volume-hidden m7 col">
+                        <div id="slider-wrapper" class="volume-hidden m6 col">
                             <div id="volume-slider"></div>
                         </div>
-                        <div class="m2 col">
+                        <div class="m3 col">
                             <i class="material-icons small">volume_up</i>
                         </div>
                     </div>
                 </div>
-                <div class="s2 m3 col">
+                <div class="m3 offset-m9 l3 col">
                     <div class="share-i-wrapper">
                         <i class="material-icons small waves-effect">share</i>
                     </div>
@@ -414,12 +433,13 @@
         </div>
     </div>
 
-    <div id="share-popup" class="modal">
+    <!-- SHARE DIALOG -->
+    <div id="share-popup" class="modal modal-fixed-footer">
         <div class="modal-content">
-            <h1>Sharing is Caring!</h1>
             <div class="row">
-                <div class="l12 col">
-                    <div class="share-info panel">
+                <div class="s12 col">
+                    <div class="card small">
+                        <!--
                         <div class="row">
                             <div class="share-img s3 col">
                                 <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
@@ -429,36 +449,41 @@
                                 <h5>Mix Artist</h5>
                             </div>
                         </div>
+                        -->
+                        <div class="card-image">
+                            <img src="http://images-mix.netdna-ssl.com/w/430/h/430/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                            <span class="card-title">Mix Name</span>
+                        </div>
+                        <div class="card-content">
+                            <p style="font-style: italic">by Mix Artist</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis mauris diam. Vivamus ut scelerisque est. Phasellus convallis, justo id blandit blandit, urna quam varius felis, sit amet dictum massa libero in neque.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="l12 col">
-                    <br/>
+                <div class="s12 col">
+                    <h5>How would you like to share this jam?</h5>
                 </div>
-                <div class="l12 col">
-                    <h4>How would you like to share this jam?</h4>
+                <div class="s12 col">
+                    <div class="share-apps row">
+                        <div class="s3 col"><div class="share-icon facebook waves-effect waves-light"><i class="fa fa-2x fa-facebook"></i></div></div>
+                        <div class="s3 col"><div class="share-icon twitter waves-effect waves-light"><i class="fa fa-2x fa-twitter"></i></div></div>
+                        <div class="s3 col"><div class="share-icon google waves-effect waves-light"><i class="fa fa-2x fa-google-plus"></i></div></div>
+                        <div class="s3 col"><div class="share-icon direct waves-effect waves-light"><i class="fa fa-2x fa-link"></i></div></div>
+                    </div>
                 </div>
-                <div class="l12 col">
-                    <ul class="share-apps sblock-grid-4">
-                        <li><div class="share-icon facebook"><i class="fa fa-2x fa-facebook"></i></div>FACEBOOK</li>
-                        <li><div class="share-icon twitter"><i class="fa fa-2x fa-twitter"></i></div>TWITTER</li>
-                        <li><div class="share-icon google"><i class="fa fa-2x fa-google-plus"></i></div>GOOGLE+</li>
-                        <li><div class="share-icon direct"><i class="fa fa-2x fa-link"></i></div>LINK</li>
-                    </ul>
-                </div>
-                <div class="l12 col">
-                    <div class="link-box row">
+                <div class="s12 col">
+                    <div class="link-box">
                         <label for="direct-link">Direct Link</label>
-                        <div class="s11 col">
-                            <input id="direct-link" type="text" value="http://edmsoundsystem.fm/kingdom+rave+set+may+2015" readonly>
-                        </div>
-                        <div class="s1 col">
-                            <a href="#" id="btn-copy-link" class="button postfix"><i class="fa fa-copy"></i></a>
-                        </div>
+                        <input id="direct-link" type="text" value="http://edmsoundsystem.fm/kingdom+rave+set+may+2015" readonly>
+                            <!--<a href="#" id="btn-copy-link" class="btn waves-effect waves-light">Copy</a>-->
                     </div>
                 </div>
             </div>
         </div>
-        <a class="modal-close">&#215;</a>
+        <div class="modal-footer">
+            <a href="#!" id="copy-link" class="modal-action waves-effect btn-flat">Copy Link</a>
+            <a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
+        </div>
     </div>
 
     <script src="js/vendor/jquery.js"></script>

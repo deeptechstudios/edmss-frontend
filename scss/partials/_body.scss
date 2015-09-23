@@ -50,6 +50,17 @@ body {
     margin-right: auto;
     max-width: 1300px;
   }
+
+  .mix-search .col {
+    padding: 0;
+
+    i {
+      margin-top: 15px;
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 500px) {

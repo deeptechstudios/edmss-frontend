@@ -37,6 +37,14 @@
   .volume-share-controls {
     float: right;
     max-width: 420px;
+
+    .col {
+      padding: 0;
+    }
+  }
+
+  // TODO small screen
+  @media screen and (max-width: $small-screen) {
   }
 }
 
@@ -106,7 +114,6 @@
 #slider-wrapper {
   position: relative;
   display: table-cell;
-  //margin-left: 5px;
   padding: 0;
 }
 
