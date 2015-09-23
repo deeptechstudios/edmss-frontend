@@ -8430,6 +8430,10 @@ body {
       margin-top: 15px; }
       .page-0 .mix-search .col i:hover {
         cursor: default; }
+  .page-0 .genre-list {
+    margin: 0 10px; }
+    .page-0 .genre-list li {
+      display: inline-block; }
 
 @media all and (max-width: 500px) {
   .page-0 {
