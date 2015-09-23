@@ -8533,10 +8533,24 @@ nav .input-field {
   display: block;
   height: 80px;
   padding: 10px 0;
-  border-top: 1px solid lightgray;
-  /*@media only screen and (min-width: $large-screen-up) {
-    max-width: 90rem;
-  }*/ }
+  border-top: 1px solid lightgray; }
+  .track .track-info {
+    position: relative; }
+    .track .track-info .track-name {
+      font-weight: 600; }
+  .track .play-overlay {
+    position: absolute;
+    top: 0;
+    left: calc(0.75rem + 10px);
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    color: darkgray;
+    background-color: black; }
+  .track .track-share-i-wrapper i {
+    line-height: 68px;
+    opacity: 0;
+    color: #c5c5c5; }
   .track * {
     vertical-align: middle; }
   .track img {
@@ -8551,14 +8565,8 @@ nav .input-field {
   .track:hover {
     cursor: pointer;
     background-color: #eee; }
-
-.track-name {
-  font-weight: 600; }
-
-.track-share-i-wrapper i {
-  line-height: 68px;
-  opacity: 0;
-  color: #c5c5c5; }
+    .track:hover .play-overlay {
+      opacity: 0.6; }
 
 /*** Colors ***/
 /*** Badges ***/
