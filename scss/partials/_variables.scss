@@ -1,11 +1,4 @@
-/* Site Colors */
-$header-bg-color: #333333;
-$header-fg-color: white;
-
-$body-bg-color: #f9f9f9;
-$body-fg-color: #222222;
-
-$accent-color: deepskyblue;
+@import "../vendor/materialize/components/variables";
 
 /* Brand Colors */
 $facebook-color: #3b5998;
@@ -14,5 +7,10 @@ $gplus-color: #dd4b39;
 $soundcloud-color: #ff8800;
 
 // TODO organize these
-$bar-height: 80px;
 $track-padding: 10px 0;
+$player-height: 80px;
+$playbar-height: 5px;
+$slider-bg-color: #aaa;
+
+$share-dialog-max-width: 500px;
+$share-dialog-max-height: 600px;

@@ -1,18 +1,27 @@
-label {
-  text-transform: uppercase;
-}
+@import "mixins";
 
+/*
 h1, h2, h3, h4, h5, h6 {
   font-family: "Titillium Web";
 }
-
+*/
 
 .share-i-wrapper,
+.track-share-i-wrapper,
 .backward-i-wrapper,
 .play-i-wrapper,
 .forward-i-wrapper,
 .volume-wrapper,
-.more-i-wrapper,
 i:hover {
   cursor: pointer;
+}
+
+.share-i-wrapper,
+.track-share-i-wrapper,
+.backward-i-wrapper,
+.play-i-wrapper,
+.forward-i-wrapper {
+  i {
+    @include border-radius(50%);
+  }
 }

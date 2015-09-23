@@ -2,13 +2,16 @@
  * Created by danielwhatley on 8/25/15.
  */
 
+var playbarSliding = false;
+var volumeSliding = false;
+
 $(function() {
-    $('body').click(function() {
+    /*$('body').click(function() {
         $('.more-menu').hide(100);
         $('.share-menu').hide(100);
-    });
+    });*/
 
-    $('.icon-bar a.item').click(function() {
+    $('.nav-wrapper li').click(function() {
         var pages = [$('.page-0'), $('.page-1'), $('.page-2')];
         var index = $(this).index();
 
@@ -30,14 +33,14 @@ $(function() {
                 break;
         }
 
-        $('.icon-bar a.item.current').removeClass('current');
-        $(this).addClass('current')
+        $('.nav-wrapper li.active').removeClass('active');
+        $(this).addClass('active')
     });
 
     $('.track').hover(function() {
-        $(this).find('i').css('display', 'block');
+        $(this).find('i').css('opacity', '1');
     }, function() {
-        $(this).find('i').css('display', 'none');
+        $(this).find('i').css('opacity', '0');
     });
 
     $('.more-i-wrapper').click(function(ev) {
@@ -46,58 +49,74 @@ $(function() {
         $('.more-menu').toggle(100);
     });
 
-    $('.volume-wrapper').hover(function() {
-        // Hover on
-        $('.volume-hidden').css('opacity', 1);
-    }, function() {
-        // Hover off
-        setTimeout(function() {
-            if ($('.volume-wrapper:hover').length == 0)
-                $('.volume-hidden').css('opacity', 0);
-        }, 400);
-    });
-
+    // Sliders
     $('#playbar-slider').slider({
         range: "min",
         min: 0,
         max: 10800,
-        value: 0
+        value: 0,
+        start: function() {
+            playbarSliding = true;
+        },
+        stop: function() {
+            playbarSliding = false;
+            if ($('#playbar-slider').find('.ui-slider-handle:hover').length == 0)
+                $('#playbar-slider').find('.ui-slider-handle').css('opacity', 0);
+        }
     });
 
     $('#volume-slider').slider({
         range: "min",
         min: 0,
         max: 100,
-        value: 80
+        value: 80,
+        start: function() {
+            volumeSliding = true;
+        },
+        stop: function() {
+            volumeSliding = false;
+            if ($('.volume-wrapper:hover').length == 0)
+                $('.volume-hidden').css('opacity', 0);
+        }
+    });
+
+    $('#playbar-slider, #playbar-slider .ui-slider-handle').hover(function() {
+        // Hover on
+        $('#playbar-slider').find('.ui-slider-handle').css('opacity', 1);
+    }, function() {
+        // Hover off
+        setTimeout(function() {
+            if (!playbarSliding && $('#playbar-slider').find('.ui-slider-handle:hover').length == 0)
+                $('#playbar-slider').find('.ui-slider-handle').css('opacity', 0);
+        }, 400);
+    });
+
+    $('.volume-wrapper').hover(function() {
+        // Hover on
+        $('.volume-hidden').css('opacity', 1);
+    }, function() {
+        // Hover off
+        setTimeout(function() {
+            if (!volumeSliding && $('.volume-wrapper:hover').length == 0)
+                $('.volume-hidden').css('opacity', 0);
+        }, 400);
     });
 
     // Share buttons
     $('.menu-share').click(function() {
-        $('#btn-share-another').removeClass('active');
-        $('#btn-share-current').removeClass('active');
-        $('#btn-share-website').addClass('active');
-        $('#share-popup').foundation('reveal', 'open');
+        $('#share-popup').openModal();
     });
 
-    $('.track-share-i-wrapper').click(function() {
-        $('#btn-share-website').removeClass('active');
-        $('#btn-share-current').removeClass('active');
-        $('#btn-share-another').addClass('active');
+    $('.track-share-i-wrapper').click(function(ev) {
+        ev.preventDefault();
         // TODO fill in mix
-        $('#share-popup').foundation('reveal', 'open');
+        $('#share-popup').openModal();
     });
 
-    $('.share-i-wrapper').click(function() {
-        $('#btn-share-another').removeClass('active');
-        $('#btn-share-website').removeClass('active');
-        $('#btn-share-current').addClass('active');
-        $('#share-popup').foundation('reveal', 'open');
+    $('.share-i-wrapper').click(function(ev) {
+        ev.preventDefault();
+        $('#share-popup').openModal();
     });
 
-    $('#share-popup .button').click(function() {
-        $(this).parent().siblings().each(function() {
-            $(this).find('a').removeClass('active');
-        });
-        $(this).addClass('active');
-    });
+    $('select').material_select();
 });

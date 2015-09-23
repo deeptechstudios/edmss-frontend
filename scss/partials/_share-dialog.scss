@@ -1,66 +1,34 @@
-@import '../vendor/foundation/settings';
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 #share-popup {
-  min-height: 0;
-  top: 20% !important;
-  max-width: 750px;
-
-  h4 {
-    text-align: center;
-    margin-bottom: 1em;
-  }
-}
-
-.share-info {
-  margin: 0 auto;
-  padding-left: 0;
-
-  .share-img {
-    padding: 0;
-  }
-
-  img {
-    float: right;
-    min-width: 80px;
-    min-height: 80px;
-  }
-
-  h3 {
-    line-height: 1.4;
-  }
+  max-height: $share-dialog-max-height;
+  max-width: $share-dialog-max-width;
 
   h5 {
-    margin-top: 0.5em;
+    text-align: center;
   }
 
-  @media only screen {
-    @media (min-width: $small-breakpoint) {
-      max-width: 80%;
-    }
+  .modal-content {
+    overflow: hidden;
   }
 }
 
 .share-apps {
   list-style: none;
 
-  li {
-    display: inline-block;
-
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+  div {
+    //display: inline-block;
 
     .share-icon {
-      line-height: 70px;
-      width: 70px;
+      line-height: 50px;
+      width: 50px;
       text-align: center;
-      margin-left: calc(50% - 35px);
+      margin-left: calc(50% - 25px);
 
       @include border-radius(50%);
 
-      @include box-shadow(0, 0, 8px, rgba(0,0,0,0.4));
+      @include box-shadow(0, 0, 5px, rgba(0,0,0,0.4));
     }
 
     &:hover {
@@ -74,7 +42,7 @@
 
   .direct {
     color: white;
-    background-color: $header-bg-color;
+    background-color: $primary-color;
   }
 
   .facebook {
@@ -98,12 +66,6 @@
   }
 }
 
-.share-apps, .link-box {
-  max-width: 600px !important;
-  margin: 0 auto !important;
-}
-
-#btn-copy-link {
-  text-align: center;
-  padding: 0;
+.link-box {
+  margin-top: 5px;
 }
