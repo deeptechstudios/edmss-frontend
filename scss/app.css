@@ -8340,9 +8340,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
-label {
-  text-transform: uppercase; }
-
 /*
 h1, h2, h3, h4, h5, h6 {
   font-family: "Titillium Web";
@@ -8523,6 +8520,7 @@ nav .input-field {
 /* Progress Bar */
 /* Brand Colors */
 .track {
+  display: block;
   height: 80px;
   padding: 10px 0;
   border-top: 1px solid lightgray;

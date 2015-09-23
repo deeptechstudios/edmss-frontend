@@ -1,6 +1,7 @@
 @import "variables";
 
 .track {
+  display: block;
   height: $player-height;
   padding: $track-padding;
 

@@ -107,12 +107,14 @@ $(function() {
         $('#share-popup').openModal();
     });
 
-    $('.track-share-i-wrapper').click(function() {
+    $('.track-share-i-wrapper').click(function(ev) {
+        ev.preventDefault();
         // TODO fill in mix
         $('#share-popup').openModal();
     });
 
-    $('.share-i-wrapper').click(function() {
+    $('.share-i-wrapper').click(function(ev) {
+        ev.preventDefault();
         $('#share-popup').openModal();
     });
 
