@@ -1,40 +1,6 @@
 @import "variables";
 @import "mixins";
 
-/*
-.nav-wrapper {
-  position: fixed;
-  top: 0;
-  height: $bar-height;
-  max-width: 100%;
-  z-index: 1;
-
-  line-height: $bar-height;
-  background-color: $header-bg-color;
-  color: white;
-
-  @include user-select(none);
-  @include box-shadow(0, 0, 8px, rgba(0,0,0,0.4));
-
-  * {
-    vertical-align: middle;
-  }
-
-  /*
-  .nav-logo {
-    width: 90px;
-    height: 90px;
-    margin: 5px;
-  }
-
-
-}
-*/
-
-nav .input-field {
-  width: 600px;
-
-  input {
-    background-color: rgba(255,255,255,0.1);
-  }
+#menu-button {
+  margin-left: 10px;
 }

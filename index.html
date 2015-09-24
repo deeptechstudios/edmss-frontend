@@ -10,17 +10,20 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,400italic,600,300italic' rel='stylesheet' type='text/css'>-->
     <script src="js/vendor/modernizr.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Logo</a>
-                <a href="#" data-activates="mobile-nav" class="left button-collapse"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <a href="#" class="brand-logo center">Logo</a>
+                <a href="#" id="menu-button" data-activates="mobile-nav" class="left"><i class="material-icons">menu</i></a>
+                <!--
+                <ul class="right hide-on-med-and-down">
                     <li class="active"><a href="#">Listen</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+                -->
             </div>
             <ul class="side-nav" id="mobile-nav">
                 <li class="active"><a href="#">Listen</a></li>
@@ -29,202 +32,221 @@
             </ul>
         </nav>
     </header>
+
     <div class="content-wrapper">
+
+        <!-- LISTEN PAGE -->
         <div class="page-0">
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title black-text">Mixes</span>
-                    <p>All the latest shows, from big names to local artists.</p>
-                    <div class="mix-search row">
-                        <div class="s12 m6 col">
-                            <div class="row valign-wrapper">
-                                <div class="s1 col valign center-align">
-                                    <i class="material-icons small">search</i>
-                                </div>
-                                <div class="s11 col valign">
-                                    <div class="input-field">
-                                        <input id="search" type="text" required>
-                                        <label for="search">Search mixes</label>
+
+            <!-- SEARCH -->
+            <div class="row">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title black-text">Mixes</span>
+                        <p>All the latest shows, from big names to local artists.</p>
+                        <div class="mix-search row">
+                            <div class="s12 m6 col">
+                                <div class="row valign-wrapper">
+                                    <div class="s1 col valign center-align">
+                                        <i class="material-icons small">search</i>
+                                    </div>
+                                    <div class="s11 col valign">
+                                        <div class="input-field">
+                                            <input id="search" type="text" required>
+                                            <label for="search">Search mixes</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="s12 m6 col">
-                            <p>Genres</p>
-                            <ul class="genre-list">
-                                <li><a href="#" class="cyan btn small waves-effect waves-light">Trance</a></li>
-                                <li><a href="#" class="green btn small waves-effect waves-light">Qwert</a></li>
-                                <li><a href="#" class="yellow btn small waves-effect waves-light">Electro</a></li>
+                            <div class="s12 m6 col">
+                                <p>Genres</p>
+                                <ul class="genre-list">
+                                    <li><a href="#" class="red btn small waves-effect waves-light">Downtempo</a></li>
+                                    <li><a href="#" class="orange btn small waves-effect waves-light">House</a></li>
+                                    <li><a href="#" class="amber btn small waves-effect waves-light">Electro</a></li>
+                                    <li><a href="#" class="yellow darken-1 btn small waves-effect waves-light">Techno</a></li>
+                                    <li><a href="#" class="green btn small waves-effect waves-light">Dubstep</a></li>
+                                    <li><a href="#" class="teal btn small waves-effect waves-light">Trap</a></li>
+                                    <li><a href="#" class="light-blue btn small waves-effect waves-light">Trance</a></li>
+                                    <li><a href="#" class="blue btn small waves-effect waves-light">Psy</a></li>
+                                    <li><a href="#" class="indigo btn small waves-effect waves-light">Drum and Bass</a></li>
+                                    <li><a href="#" class="purple btn small waves-effect waves-light">Neurofunk</a></li>
 
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="track row">
-                    <div class="track-info s8 m10 col">
-                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                    </div>
-                    <div class="s4 m2 col">
-                        <div class="row" style="line-height: 68px">
-                            <div class="s6 col">
-                                <div class="track-share-i-wrapper">
-                                    <i class="material-icons small">share</i>
+
+            <!-- PLAYLIST -->
+            <div class="row">
+                <div class="card">
+                    <div class="track row">
+                        <div class="track-info s8 m10 col">
+                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                            <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
+                            <span>
+                                <span class="track-name">Mix Name</span><br/>
+                                <span class="track-artist">Mix Artist</span>
+                            </span>
+                        </div>
+                        <div class="s4 m2 col">
+                            <div class="row" style="line-height: 68px">
+                                <div class="s6 col">
+                                    <div class="track-share-i-wrapper">
+                                        <i class="material-icons small">share</i>
+                                    </div>
                                 </div>
+                                <div class="s6 col">4:20</div>
                             </div>
-                            <div class="s6 col">4:20</div>
                         </div>
                     </div>
-                </div>
-                <div class="track row">
-                    <div class="track-info s8 m10 col">
-                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                    </div>
-                    <div class="s4 m2 col">
-                        <div class="row" style="line-height: 68px">
-                            <div class="s6 col">
-                                <div class="track-share-i-wrapper">
-                                    <i class="material-icons small">share</i>
+                    <div class="track row">
+                        <div class="track-info s8 m10 col">
+                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                            <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
+                            <span>
+                                <span class="track-name">Mix Name</span><br/>
+                                <span class="track-artist">Mix Artist</span>
+                            </span>
+                        </div>
+                        <div class="s4 m2 col">
+                            <div class="row" style="line-height: 68px">
+                                <div class="s6 col">
+                                    <div class="track-share-i-wrapper">
+                                        <i class="material-icons small">share</i>
+                                    </div>
                                 </div>
+                                <div class="s6 col">4:20</div>
                             </div>
-                            <div class="s6 col">4:20</div>
                         </div>
                     </div>
-                </div>
-                <div class="track row">
-                    <div class="track-info s8 m10 col">
-                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                    </div>
-                    <div class="s4 m2 col">
-                        <div class="row" style="line-height: 68px">
-                            <div class="s6 col">
-                                <div class="track-share-i-wrapper">
-                                    <i class="material-icons small">share</i>
+                    <div class="track row">
+                        <div class="track-info s8 m10 col">
+                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                            <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
+                            <span>
+                                <span class="track-name">Mix Name</span><br/>
+                                <span class="track-artist">Mix Artist</span>
+                            </span>
+                        </div>
+                        <div class="s4 m2 col">
+                            <div class="row" style="line-height: 68px">
+                                <div class="s6 col">
+                                    <div class="track-share-i-wrapper">
+                                        <i class="material-icons small">share</i>
+                                    </div>
                                 </div>
+                                <div class="s6 col">4:20</div>
                             </div>
-                            <div class="s6 col">4:20</div>
                         </div>
                     </div>
-                </div>
-                <div class="track row">
-                    <div class="track-info s8 m10 col">
-                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                    </div>
-                    <div class="s4 m2 col">
-                        <div class="row" style="line-height: 68px">
-                            <div class="s6 col">
-                                <div class="track-share-i-wrapper">
-                                    <i class="material-icons small">share</i>
+                    <div class="track row">
+                        <div class="track-info s8 m10 col">
+                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                            <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
+                            <span>
+                                <span class="track-name">Mix Name</span><br/>
+                                <span class="track-artist">Mix Artist</span>
+                            </span>
+                        </div>
+                        <div class="s4 m2 col">
+                            <div class="row" style="line-height: 68px">
+                                <div class="s6 col">
+                                    <div class="track-share-i-wrapper">
+                                        <i class="material-icons small">share</i>
+                                    </div>
                                 </div>
+                                <div class="s6 col">4:20</div>
                             </div>
-                            <div class="s6 col">4:20</div>
                         </div>
                     </div>
-                </div>
-                <div class="track row">
-                    <div class="track-info s8 m10 col">
-                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                    </div>
-                    <div class="s4 m2 col">
-                        <div class="row" style="line-height: 68px">
-                            <div class="s6 col">
-                                <div class="track-share-i-wrapper">
-                                    <i class="material-icons small">share</i>
+                    <div class="track row">
+                        <div class="track-info s8 m10 col">
+                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                            <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
+                            <span>
+                                <span class="track-name">Mix Name</span><br/>
+                                <span class="track-artist">Mix Artist</span>
+                            </span>
+                        </div>
+                        <div class="s4 m2 col">
+                            <div class="row" style="line-height: 68px">
+                                <div class="s6 col">
+                                    <div class="track-share-i-wrapper">
+                                        <i class="material-icons small">share</i>
+                                    </div>
                                 </div>
+                                <div class="s6 col">4:20</div>
                             </div>
-                            <div class="s6 col">4:20</div>
                         </div>
                     </div>
-                </div>
-                <div class="track row">
-                    <div class="track-info s8 m10 col">
-                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                    </div>
-                    <div class="s4 m2 col">
-                        <div class="row" style="line-height: 68px">
-                            <div class="s6 col">
-                                <div class="track-share-i-wrapper">
-                                    <i class="material-icons small">share</i>
+                    <div class="track row">
+                        <div class="track-info s8 m10 col">
+                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                            <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
+                            <span>
+                                <span class="track-name">Mix Name</span><br/>
+                                <span class="track-artist">Mix Artist</span>
+                            </span>
+                        </div>
+                        <div class="s4 m2 col">
+                            <div class="row" style="line-height: 68px">
+                                <div class="s6 col">
+                                    <div class="track-share-i-wrapper">
+                                        <i class="material-icons small">share</i>
+                                    </div>
                                 </div>
+                                <div class="s6 col">4:20</div>
                             </div>
-                            <div class="s6 col">4:20</div>
                         </div>
                     </div>
-                </div>
-                <div class="track row">
-                    <div class="track-info s8 m10 col">
-                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                    </div>
-                    <div class="s4 m2 col">
-                        <div class="row" style="line-height: 68px">
-                            <div class="s6 col">
-                                <div class="track-share-i-wrapper">
-                                    <i class="material-icons small">share</i>
+                    <div class="track row">
+                        <div class="track-info s8 m10 col">
+                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                            <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
+                            <span>
+                                <span class="track-name">Mix Name</span><br/>
+                                <span class="track-artist">Mix Artist</span>
+                            </span>
+                        </div>
+                        <div class="s4 m2 col">
+                            <div class="row" style="line-height: 68px">
+                                <div class="s6 col">
+                                    <div class="track-share-i-wrapper">
+                                        <i class="material-icons small">share</i>
+                                    </div>
                                 </div>
+                                <div class="s6 col">4:20</div>
                             </div>
-                            <div class="s6 col">4:20</div>
                         </div>
                     </div>
-                </div>
-                <div class="track row">
-                    <div class="track-info s8 m10 col">
-                        <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
-                        <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
-                        <span>
-                            <span class="track-name">Mix Name</span><br/>
-                            <span class="track-artist">Mix Artist</span>
-                        </span>
-                    </div>
-                    <div class="s4 m2 col">
-                        <div class="row" style="line-height: 68px">
-                            <div class="s6 col">
-                                <div class="track-share-i-wrapper">
-                                    <i class="material-icons small">share</i>
+                    <div class="track row">
+                        <div class="track-info s8 m10 col">
+                            <img src="http://images-mix.netdna-ssl.com/w/80/h/80/q/85/upload/images/profile/475821f6-feb3-43ce-aa08-f50f568167c4.jpg">
+                            <div class="play-overlay center-align valign-wrapper"><i class="material-icons medium valign">play_arrow</i></div>
+                            <span>
+                                <span class="track-name">Mix Name</span><br/>
+                                <span class="track-artist">Mix Artist</span>
+                            </span>
+                        </div>
+                        <div class="s4 m2 col">
+                            <div class="row" style="line-height: 68px">
+                                <div class="s6 col">
+                                    <div class="track-share-i-wrapper">
+                                        <i class="material-icons small">share</i>
+                                    </div>
                                 </div>
+                                <div class="s6 col">4:20</div>
                             </div>
-                            <div class="s6 col">4:20</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- ABOUT PAGE -->
         <div class="page-1">
             <div class="row">
                 <div class="m12 l6 col">
@@ -271,7 +293,10 @@
             </div>
         </div>
 
+        <!-- CONTACT PAGE -->
         <div class="page-2">
+
+            <!-- HEADER -->
             <div class="row">
                 <div class="s12 col">
                     <div class="card">
@@ -282,7 +307,9 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
+                <!-- CONTACT FORM -->
                 <div class="m12 l6 col">
                     <div class="card">
                         <div class="card-content">
@@ -322,6 +349,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- STATION INFO -->
                 <div class="m12 l6 col">
                     <div class="card">
                         <div class="card-content">

@@ -36,7 +36,7 @@ $(function() {
         $('nav li.active').removeClass('active');
         $(this).addClass('active');
 
-        $('.button-collapse').sideNav('hide');
+        $('#menu-button').sideNav('hide');
     });
 
     $('.track').hover(function() {
@@ -122,5 +122,5 @@ $(function() {
 
     $('select').material_select();
 
-    $('.button-collapse').sideNav();
+    $('#menu-button').sideNav();
 });

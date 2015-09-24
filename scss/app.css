@@ -8388,11 +8388,6 @@ i:hover {
 body {
   font-family: "Titillium Web";
 }
-
-.body-wrapper {
-  margin: 0 auto;
-  padding: 0;
-}
 */
 .row {
   margin-bottom: 0; }
@@ -8416,14 +8411,11 @@ body {
   -ms-transition: left 0.6s ease 0s;
   -o-transition: left 0.6s ease 0s;
   transition: left 0.6s ease 0s; }
+  .page .row, .page-0 .row, .page-1 .row, .page-2 .row {
+    max-width: 1300px; }
 
 .page-0 {
-  left: 0;
-  padding: 0 2em; }
-  .page-0 .card {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1300px; }
+  left: 0; }
   .page-0 .mix-search .col {
     padding: 0; }
     .page-0 .mix-search .col i {
@@ -8434,10 +8426,12 @@ body {
     margin: 0 10px; }
     .page-0 .genre-list li {
       display: inline-block; }
+    .page-0 .genre-list .btn, .page-0 .genre-list .btn-large {
+      height: 25px;
+      line-height: 25px;
+      padding: 0 0.4rem;
+      margin: 0.2rem 0.3rem; }
 
-@media all and (max-width: 500px) {
-  .page-0 {
-    padding: 0 0.6em; } }
 .page-1 {
   left: 100%; }
   .page-1 li {
@@ -8445,13 +8439,9 @@ body {
     .page-1 li i {
       line-height: inherit;
       margin-top: -2px; }
-  .page-1 .row {
-    max-width: 1300px; }
 
 .page-2 {
   left: 200%; }
-  .page-2 .row {
-    max-width: 1300px; }
   .page-2 .columns, .page-2 form a {
     float: right; }
 
@@ -8475,39 +8465,8 @@ body {
 /*** Collections ***/
 /* Progress Bar */
 /* Brand Colors */
-/*
-.nav-wrapper {
-  position: fixed;
-  top: 0;
-  height: $bar-height;
-  max-width: 100%;
-  z-index: 1;
-
-  line-height: $bar-height;
-  background-color: $header-bg-color;
-  color: white;
-
-  @include user-select(none);
-  @include box-shadow(0, 0, 8px, rgba(0,0,0,0.4));
-
-  * {
-    vertical-align: middle;
-  }
-
-  /*
-  .nav-logo {
-    width: 90px;
-    height: 90px;
-    margin: 5px;
-  }
-
-
-}
-*/
-nav .input-field {
-  width: 600px; }
-  nav .input-field input {
-    background-color: rgba(255, 255, 255, 0.1); }
+#menu-button {
+  margin-left: 10px; }
 
 /*** Colors ***/
 /*** Badges ***/
