@@ -127,16 +127,15 @@ $(function() {
 
     $('.genre-list a').mousedown(function() {
         var colorClass = $(this).data('color');
-        var baseColor = colorClass.split(' ')[0];
         if ($(this).data('active') === undefined) {
             $(this).data('active', false);
         }
         if ($(this).data('active') == true) {
             $(this).removeClass(colorClass);
-            $(this).addClass('white black-text waves-' + baseColor);
+            $(this).addClass('white black-text');
             $(this).data('active', false);
         } else {
-            $(this).removeClass('white black-text waves-' + baseColor);
+            $(this).removeClass('white black-text');
             $(this).addClass(colorClass);
             $(this).data('active', true);
         }
