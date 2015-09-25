@@ -54,6 +54,16 @@ body {
     }
   }
 
+  .genre-reset {
+    margin-left: 10px;
+
+    opacity: 0;
+    transition: 500ms opacity;
+    cursor: default;
+    
+    @include user-select(none);
+  }
+
   .genre-list {
     margin: 0 10px;
 

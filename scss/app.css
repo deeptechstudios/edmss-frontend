@@ -8422,6 +8422,15 @@ body {
       margin-top: 15px; }
       .page-0 .mix-search .col i:hover {
         cursor: default; }
+  .page-0 .genre-reset {
+    margin-left: 10px;
+    opacity: 0;
+    transition: 500ms opacity;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
   .page-0 .genre-list {
     margin: 0 10px; }
     .page-0 .genre-list li {

@@ -139,5 +139,21 @@ $(function() {
             $(this).addClass(colorClass);
             $(this).data('active', true);
         }
+        setTimeout(function() {
+            $('.genre-reset').css('opacity', '1').css('cursor', 'pointer');
+        }, 500);
+    });
+
+    $('.genre-reset').click(function() {
+        if ($(this).css('opacity') == '1') {
+            $(this).css('opacity', '0').css('cursor', 'default');
+
+            $('.genre-list a').each(function () {
+                var colorClass = $(this).data('color');
+                $(this).removeClass(colorClass);
+                $(this).addClass('white black-text');
+                $(this).data('active', false);
+            });
+        }
     });
 });
