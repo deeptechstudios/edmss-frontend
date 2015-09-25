@@ -8434,6 +8434,9 @@ body {
 
 .page-1 {
   left: 100%; }
+  .page-1 .share-apps {
+    margin: 0 auto;
+    max-width: 420px; }
   .page-1 li {
     margin: 0.4em 0; }
     .page-1 li i {
