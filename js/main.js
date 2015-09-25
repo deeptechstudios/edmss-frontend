@@ -125,7 +125,7 @@ $(function() {
 
     $('#menu-button').sideNav();
 
-    $('.genre-list a').click(function() {
+    $('.genre-list a').mousedown(function() {
         var colorClass = $(this).data('color');
         var baseColor = colorClass.split(' ')[0];
         if ($(this).data('active') === undefined) {
