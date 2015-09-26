@@ -8357,7 +8357,6 @@ i:hover {
 .share-i-wrapper i,
 .track-share-i-wrapper i,
 .backward-i-wrapper i,
-.play-i-wrapper i,
 .forward-i-wrapper i {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -8585,6 +8584,8 @@ body {
   .player .playback-controls {
     margin: 0 auto;
     max-width: 300px; }
+    .player .playback-controls .play-i-wrapper i {
+      font-size: 2.8rem; }
   .player .volume-share-controls {
     float: right;
     max-width: 420px; }

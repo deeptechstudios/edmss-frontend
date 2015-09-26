@@ -32,6 +32,10 @@
   .playback-controls {
     margin: 0 auto;
     max-width: 300px;
+
+    .play-i-wrapper i {
+      font-size: 2.8rem;
+    }
   }
 
   .volume-share-controls {
