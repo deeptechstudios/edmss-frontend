@@ -64,6 +64,17 @@
   &:hover {
     cursor: pointer;
   }
+
+  #track-time {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    font-size: 0.8em;
+    color: lighten($primary-color, 35%);
+    opacity: 0;
+    transition: 200ms opacity;
+  }
 }
 
 #playbar-slider {

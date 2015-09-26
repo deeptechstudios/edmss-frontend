@@ -8603,6 +8603,14 @@ body {
   background-color: #aaa; }
   #playbar:hover {
     cursor: pointer; }
+  #playbar #track-time {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 0.8em;
+    color: #c3b1e8;
+    opacity: 0;
+    transition: 200ms opacity; }
 
 #playbar-slider {
   width: 100%;

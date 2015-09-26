@@ -61,8 +61,8 @@
                             <div class="s12 m6 col">
                                 <p>Genres <a href="#" class="genre-reset">Reset</a></p>
                                 <ul class="genre-list">
-                                    <li><a href="#" class="white btn black-text waves-effect waves-light" data-color="red">Downtempo</a></li>
-                                    <li><a href="#" class="white btn black-text waves-effect waves-light" data-color="deep-orange">?????</a></li>
+                                    <li><a href="#" class="white btn black-text waves-effect waves-light" data-color="red">Qwertyuio</a></li>
+                                    <li><a href="#" class="white btn black-text waves-effect waves-light" data-color="deep-orange">Asdfg</a></li>
                                     <li><a href="#" class="white btn black-text waves-effect waves-light" data-color="orange">House</a></li>
                                     <li><a href="#" class="white btn black-text waves-effect waves-light" data-color="amber">Electro</a></li>
                                     <li><a href="#" class="white btn black-text waves-effect waves-light" data-color="yellow darken-1">Techno</a></li>
@@ -73,7 +73,7 @@
                                     <li><a href="#" class="white btn black-text waves-effect waves-light" data-color="blue">Psy</a></li>
                                     <li><a href="#" class="white btn black-text waves-effect waves-light" data-color="blue darken-3">DnB</a></li>
                                     <li><a href="#" class="white btn black-text waves-effect waves-light" data-color="indigo">Liquid</a></li>
-                                    <li><a href="#" class="white btn black-text waves-effect waves-light" data-color="purple">Neurofunk</a></li>
+                                    <li><a href="#" class="white btn black-text waves-effect waves-light" data-color="purple">Hardcore</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -395,6 +395,7 @@
         <!-- SEEK BAR -->
         <div id="playbar">
             <div id="playbar-slider"></div>
+            <span id="track-time">0:04:20 / 4:20:00</span>
         </div>
 
         <!-- CURRENT TRACK INFO -->
@@ -478,16 +479,32 @@
                 </div>
                 <div class="s12 col">
                     <div class="share-apps row">
-                        <div class="s3 col"><div class="share-icon facebook waves-effect waves-light"><i class="fa fa-2x fa-facebook"></i></div></div>
-                        <div class="s3 col"><div class="share-icon twitter waves-effect waves-light"><i class="fa fa-2x fa-twitter"></i></div></div>
-                        <div class="s3 col"><div class="share-icon google waves-effect waves-light"><i class="fa fa-2x fa-google-plus"></i></div></div>
-                        <div class="s3 col"><div class="share-icon direct waves-effect waves-light"><i class="fa fa-2x fa-link"></i></div></div>
+                        <div class="s3 col center-align">
+                            <a href="#" class="facebook btn-floating btn-large waves-effect waves-light tooltipped" data-position="bottom" data-delay="0" data-tooltip="Facebook">
+                                <i class="fa fa-2x fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="s3 col center-align">
+                            <a href="#" class="twitter btn-floating btn-large waves-effect waves-light">
+                                <i class="fa fa-2x fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="s3 col center-align">
+                            <a href="#" class="google btn-floating btn-large waves-effect waves-light">
+                                <i class="fa fa-2x fa-google-plus"></i>
+                            </a>
+                        </div>
+                        <div class="s3 col center-align">
+                            <a href="#" class="direct btn-floating btn-large waves-effect waves-light">
+                                <i class="fa fa-2x fa-link"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="s12 col">
                     <div class="link-box">
                         <label for="direct-link">Direct Link</label>
-                        <input id="direct-link" type="text" value="http://edmsoundsystem.fm/kingdom+rave+set+may+2015" readonly>
+                        <input id="direct-link" type="text" value="http://edmsoundsystem.fm/kingdom+rave+set+may+2015" readonly onclick="this.select();">
                     </div>
                 </div>
             </div>
